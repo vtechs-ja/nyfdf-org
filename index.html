@@ -5,647 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>NYFDF — Northgate Youth and Family Development Foundation</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
-<style>
-  :root {
-    --teal:       #1A7A6E;
-    --teal-dark:  #0F5549;
-    --teal-light: #D6EDEB;
-    --gold:       #C8952A;
-    --gold-light: #F5E6C8;
-    --ink:        #1C2B2A;
-    --mist:       #F4F8F7;
-    --grey:       #5A6E6C;
-    --white:      #FFFFFF;
-  }
-
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-  html { scroll-behavior: smooth; }
-
-  body {
-    font-family: 'DM Sans', sans-serif;
-    background: var(--white);
-    color: var(--ink);
-    overflow-x: hidden;
-  }
-
-  /* ── NAV ── */
-  nav {
-    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-    display: flex; align-items: center; justify-content: space-between;
-    padding: 0 5vw;
-    height: 72px;
-    background: rgba(28, 43, 42, 0.96);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(200,149,42,0.2);
-  }
-
-  .nav-brand {
-    display: flex; align-items: center; gap: 14px; text-decoration: none;
-  }
-
-  .nav-emblem {
-    width: 38px; height: 38px;
-    border: 2px solid var(--gold);
-    border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
-    flex-shrink: 0;
-  }
-
-  .nav-emblem span {
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 700; font-size: 13px;
-    color: var(--gold); letter-spacing: 0.5px;
-  }
-
-  .nav-name {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 17px; font-weight: 600;
-    color: var(--white); letter-spacing: 0.3px;
-    line-height: 1.1;
-  }
-
-  .nav-name small {
-    display: block;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 10px; font-weight: 300;
-    color: rgba(255,255,255,0.5);
-    letter-spacing: 1.5px; text-transform: uppercase;
-    margin-top: 1px;
-  }
-
-  .nav-links {
-    display: flex; gap: 36px; list-style: none;
-  }
-
-  .nav-links a {
-    font-size: 13px; font-weight: 400; letter-spacing: 0.8px;
-    text-transform: uppercase; text-decoration: none;
-    color: rgba(255,255,255,0.7);
-    transition: color 0.2s;
-  }
-
-  .nav-links a:hover { color: var(--gold); }
-
-  .nav-cta {
-    background: var(--gold); color: var(--ink) !important;
-    padding: 8px 20px; border-radius: 2px;
-    font-weight: 500 !important;
-    transition: background 0.2s !important;
-  }
-
-  .nav-cta:hover { background: #e0a830 !important; color: var(--ink) !important; }
-
-  /* ── HERO ── */
-  .hero {
-    min-height: 100vh;
-    background: var(--ink);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .hero-bg-pattern {
-    position: absolute; inset: 0; pointer-events: none;
-    background-image:
-      repeating-linear-gradient(0deg, transparent, transparent 79px, rgba(26,122,110,0.07) 80px),
-      repeating-linear-gradient(90deg, transparent, transparent 79px, rgba(26,122,110,0.07) 80px);
-    opacity: 0.6;
-  }
-
-  .hero-left {
-    display: flex; flex-direction: column; justify-content: center;
-    padding: 140px 6vw 80px 7vw;
-    position: relative; z-index: 2;
-  }
-
-  .hero-eyebrow {
-    display: inline-flex; align-items: center; gap: 10px;
-    margin-bottom: 28px;
-    opacity: 0; animation: fadeUp 0.7s 0.2s forwards;
-  }
-
-  .hero-eyebrow-line {
-    width: 36px; height: 1px; background: var(--gold);
-  }
-
-  .hero-eyebrow span {
-    font-size: 11px; letter-spacing: 2.5px; text-transform: uppercase;
-    color: var(--gold); font-weight: 400;
-  }
-
-  .hero h1 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(44px, 5.5vw, 72px);
-    font-weight: 300; line-height: 1.08;
-    color: var(--white);
-    margin-bottom: 28px;
-    opacity: 0; animation: fadeUp 0.7s 0.35s forwards;
-  }
-
-  .hero h1 em {
-    font-style: italic; color: var(--gold);
-  }
-
-  .hero-sub {
-    font-size: 16px; line-height: 1.7; font-weight: 300;
-    color: rgba(255,255,255,0.65);
-    max-width: 460px; margin-bottom: 48px;
-    opacity: 0; animation: fadeUp 0.7s 0.5s forwards;
-  }
-
-  .hero-actions {
-    display: flex; gap: 16px; flex-wrap: wrap;
-    opacity: 0; animation: fadeUp 0.7s 0.65s forwards;
-  }
-
-  .btn-primary {
-    background: var(--teal); color: var(--white);
-    padding: 14px 32px; text-decoration: none;
-    font-size: 13px; letter-spacing: 1px; text-transform: uppercase; font-weight: 500;
-    border-radius: 2px; transition: background 0.2s, transform 0.2s;
-    display: inline-block;
-  }
-  .btn-primary:hover { background: var(--teal-dark); transform: translateY(-1px); }
-
-  .btn-outline {
-    border: 1px solid rgba(255,255,255,0.3); color: rgba(255,255,255,0.8);
-    padding: 14px 32px; text-decoration: none;
-    font-size: 13px; letter-spacing: 1px; text-transform: uppercase; font-weight: 400;
-    border-radius: 2px; transition: border-color 0.2s, color 0.2s;
-    display: inline-block;
-  }
-  .btn-outline:hover { border-color: var(--gold); color: var(--gold); }
-
-  .hero-right {
-    position: relative; z-index: 2;
-    display: flex; align-items: center; justify-content: center;
-    padding: 140px 7vw 80px 4vw;
-    opacity: 0; animation: fadeIn 1s 0.8s forwards;
-  }
-
-  .hero-stat-card {
-    background: rgba(26,122,110,0.12);
-    border: 1px solid rgba(26,122,110,0.3);
-    border-top: 3px solid var(--gold);
-    padding: 48px 44px;
-    max-width: 380px; width: 100%;
-  }
-
-  .hero-stat-card p {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 15px; font-weight: 300; font-style: italic;
-    color: rgba(255,255,255,0.75); line-height: 1.8;
-    margin-bottom: 32px;
-  }
-
-  .stat-row {
-    display: grid; grid-template-columns: 1fr 1fr; gap: 24px;
-    border-top: 1px solid rgba(26,122,110,0.3);
-    padding-top: 28px;
-  }
-
-  .stat-item { text-align: center; }
-
-  .stat-num {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 42px; font-weight: 700;
-    color: var(--gold); line-height: 1;
-    display: block; margin-bottom: 4px;
-  }
-
-  .stat-label {
-    font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
-    color: rgba(255,255,255,0.45); font-weight: 300;
-  }
-
-  /* ── GOLD BAND ── */
-  .gold-band {
-    background: var(--gold);
-    padding: 18px 7vw;
-    display: flex; align-items: center; gap: 20px;
-    overflow: hidden;
-  }
-
-  .gold-band-label {
-    font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
-    color: var(--ink); font-weight: 500; white-space: nowrap;
-    flex-shrink: 0;
-  }
-
-  .gold-band-divider { width: 1px; height: 20px; background: rgba(28,43,42,0.25); flex-shrink: 0; }
-
-  .gold-band-scroll {
-    display: flex; gap: 40px; align-items: center;
-    animation: scrollLeft 22s linear infinite;
-    white-space: nowrap;
-  }
-
-  .gold-band-item {
-    font-size: 12px; letter-spacing: 1px; color: var(--ink);
-    font-weight: 400; text-transform: uppercase;
-    display: flex; align-items: center; gap: 12px;
-  }
-
-  .gold-band-item::before {
-    content: '◆'; font-size: 6px; color: rgba(28,43,42,0.4);
-  }
-
-  @keyframes scrollLeft {
-    from { transform: translateX(0); }
-    to   { transform: translateX(-50%); }
-  }
-
-  /* ── SECTIONS ── */
-  section { padding: 100px 7vw; }
-
-  .section-eyebrow {
-    display: flex; align-items: center; gap: 14px; margin-bottom: 20px;
-  }
-  .section-eyebrow-line { width: 28px; height: 2px; background: var(--gold); }
-  .section-eyebrow span {
-    font-size: 11px; letter-spacing: 2.5px; text-transform: uppercase;
-    color: var(--gold); font-weight: 500;
-  }
-
-  .section-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(34px, 4vw, 52px);
-    font-weight: 300; line-height: 1.12;
-    color: var(--ink); margin-bottom: 24px;
-  }
-
-  .section-title em { font-style: italic; color: var(--teal); }
-
-  .section-body {
-    font-size: 16px; line-height: 1.8; font-weight: 300;
-    color: var(--grey); max-width: 620px;
-  }
-
-  /* ── ABOUT ── */
-  #about {
-    background: var(--mist);
-    display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;
-  }
-
-  .about-text .section-body { margin-bottom: 20px; }
-
-  .about-pillars {
-    display: grid; grid-template-columns: 1fr 1fr; gap: 2px;
-    margin-top: 48px;
-  }
-
-  .pillar {
-    background: var(--white);
-    padding: 28px 24px;
-    border-bottom: 3px solid transparent;
-    transition: border-color 0.3s, transform 0.3s;
-    cursor: default;
-  }
-
-  .pillar:hover { border-color: var(--teal); transform: translateY(-3px); }
-
-  .pillar-icon {
-    font-size: 24px; margin-bottom: 12px; display: block;
-  }
-
-  .pillar h4 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 18px; font-weight: 600; color: var(--ink); margin-bottom: 6px;
-  }
-
-  .pillar p { font-size: 13px; color: var(--grey); line-height: 1.6; font-weight: 300; }
-
-  .about-visual {
-    position: relative;
-  }
-
-  .about-quote-card {
-    background: var(--ink);
-    padding: 52px 44px;
-    position: relative;
-  }
-
-  .about-quote-card::before {
-    content: '"';
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 120px; line-height: 0.8;
-    color: var(--gold); opacity: 0.3;
-    position: absolute; top: 24px; left: 32px;
-    pointer-events: none;
-  }
-
-  .about-quote-card blockquote {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 22px; font-weight: 300; font-style: italic;
-    color: var(--white); line-height: 1.65;
-    margin-bottom: 28px; position: relative; z-index: 1;
-  }
-
-  .about-quote-card cite {
-    font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase;
-    color: var(--gold); font-style: normal; font-weight: 500;
-  }
-
-  .about-accent-bar {
-    height: 4px;
-    background: linear-gradient(90deg, var(--teal) 0%, var(--gold) 100%);
-    margin-top: 2px;
-  }
-
-  /* ── PROGRAMMES ── */
-  #programmes { background: var(--white); }
-
-  .programmes-header {
-    display: grid; grid-template-columns: 1fr 1fr;
-    gap: 60px; align-items: end; margin-bottom: 60px;
-  }
-
-  .programmes-intro { font-size: 15px; line-height: 1.75; color: var(--grey); font-weight: 300; }
-
-  .programme-grid {
-    display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px;
-    background: var(--teal-light);
-  }
-
-  .programme-card {
-    background: var(--white);
-    padding: 40px 32px;
-    transition: background 0.3s;
-    position: relative; overflow: hidden;
-  }
-
-  .programme-card::after {
-    content: '';
-    position: absolute; bottom: 0; left: 0; right: 0;
-    height: 3px; background: var(--teal);
-    transform: scaleX(0); transition: transform 0.3s;
-    transform-origin: left;
-  }
-
-  .programme-card:hover { background: var(--mist); }
-  .programme-card:hover::after { transform: scaleX(1); }
-
-  .programme-num {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 48px; font-weight: 700;
-    color: var(--teal-light); line-height: 1;
-    margin-bottom: 16px; display: block;
-  }
-
-  .programme-card h3 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 22px; font-weight: 600; color: var(--ink);
-    margin-bottom: 10px;
-  }
-
-  .programme-card p { font-size: 14px; color: var(--grey); line-height: 1.65; font-weight: 300; }
-
-  /* ── LEADERSHIP ── */
-  #leadership { background: var(--ink); }
-
-  #leadership .section-title { color: var(--white); }
-  #leadership .section-body { color: rgba(255,255,255,0.55); margin-bottom: 60px; }
-
-  .leadership-grid {
-    display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;
-  }
-
-  .leader-card {
-    border: 1px solid rgba(26,122,110,0.25);
-    padding: 36px 28px;
-    transition: border-color 0.3s, background 0.3s;
-    position: relative;
-  }
-
-  .leader-card:hover {
-    border-color: var(--gold);
-    background: rgba(200,149,42,0.04);
-  }
-
-  .leader-avatar {
-    width: 64px; height: 64px;
-    border-radius: 50%;
-    background: var(--teal);
-    display: flex; align-items: center; justify-content: center;
-    margin-bottom: 20px;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 22px; font-weight: 700; color: var(--white);
-    border: 2px solid rgba(200,149,42,0.4);
-  }
-
-  .leader-name {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 20px; font-weight: 600; color: var(--white);
-    margin-bottom: 4px; line-height: 1.2;
-  }
-
-  .leader-title {
-    font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
-    color: var(--gold); font-weight: 400; margin-bottom: 14px;
-  }
-
-  .leader-bio {
-    font-size: 13px; color: rgba(255,255,255,0.45);
-    line-height: 1.65; font-weight: 300;
-  }
-
-  /* ── OPERATION GRACE ── */
-  #operation-grace {
-    background: var(--teal);
-    display: grid; grid-template-columns: 1fr 1fr;
-    gap: 80px; align-items: center;
-  }
-
-  #operation-grace .section-eyebrow span { color: var(--gold-light); }
-  #operation-grace .section-eyebrow-line { background: var(--gold-light); }
-  #operation-grace .section-title { color: var(--white); }
-  #operation-grace .section-body { color: rgba(255,255,255,0.75); }
-
-  .grace-timeline {
-    display: flex; flex-direction: column; gap: 0;
-  }
-
-  .grace-month {
-    display: flex; gap: 20px; align-items: flex-start;
-    padding: 20px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.15);
-  }
-
-  .grace-month:last-child { border-bottom: none; }
-
-  .grace-month-num {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 36px; font-weight: 700;
-    color: rgba(255,255,255,0.2); line-height: 1;
-    flex-shrink: 0; width: 44px; text-align: right;
-  }
-
-  .grace-month-content h4 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 18px; font-weight: 600; color: var(--white);
-    margin-bottom: 4px;
-  }
-
-  .grace-month-content p {
-    font-size: 13px; color: rgba(255,255,255,0.6); font-weight: 300; line-height: 1.5;
-  }
-
-  .grace-month-tag {
-    display: inline-block; margin-bottom: 6px;
-    font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
-    color: var(--gold); font-weight: 500;
-    background: rgba(200,149,42,0.15);
-    padding: 2px 8px; border-radius: 1px;
-  }
-
-  /* ── SOCIAL / CONNECT ── */
-  #connect { background: var(--mist); }
-
-  .connect-grid {
-    display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start;
-    margin-top: 48px;
-  }
-
-  .social-channels {
-    display: flex; flex-direction: column; gap: 12px;
-  }
-
-  .social-card {
-    display: flex; align-items: center; gap: 18px;
-    background: var(--white);
-    padding: 20px 24px;
-    text-decoration: none;
-    border-left: 3px solid transparent;
-    transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
-  }
-
-  .social-card:hover {
-    border-left-color: var(--teal);
-    transform: translateX(4px);
-    box-shadow: 4px 0 20px rgba(26,122,110,0.1);
-  }
-
-  .social-icon {
-    width: 42px; height: 42px; border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 18px; flex-shrink: 0;
-  }
-
-  .social-info { flex: 1; }
-
-  .social-platform {
-    font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
-    color: var(--grey); font-weight: 500; margin-bottom: 2px;
-  }
-
-  .social-handle {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 18px; font-weight: 600; color: var(--ink);
-  }
-
-  .social-followers {
-    font-size: 12px; color: var(--grey); font-weight: 300;
-  }
-
-  .contact-block {
-    background: var(--ink); padding: 48px 44px;
-  }
-
-  .contact-block h3 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 28px; font-weight: 300; color: var(--white); margin-bottom: 24px;
-  }
-
-  .contact-item {
-    display: flex; gap: 16px; margin-bottom: 20px; align-items: flex-start;
-  }
-
-  .contact-icon { font-size: 18px; flex-shrink: 0; margin-top: 1px; }
-
-  .contact-label {
-    font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
-    color: var(--gold); font-weight: 500; margin-bottom: 2px;
-  }
-
-  .contact-value { font-size: 14px; color: rgba(255,255,255,0.75); font-weight: 300; }
-
-  /* ── FOOTER ── */
-  footer {
-    background: #0d1a19;
-    padding: 48px 7vw;
-    display: flex; align-items: center; justify-content: space-between;
-    border-top: 1px solid rgba(26,122,110,0.2);
-    flex-wrap: wrap; gap: 20px;
-  }
-
-  .footer-brand {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 16px; font-weight: 600; color: var(--white);
-  }
-
-  .footer-brand span { color: var(--gold); }
-
-  .footer-legal { font-size: 12px; color: rgba(255,255,255,0.3); font-weight: 300; }
-
-  .footer-links { display: flex; gap: 28px; }
-
-  .footer-links a {
-    font-size: 12px; letter-spacing: 1px; text-transform: uppercase;
-    color: rgba(255,255,255,0.4); text-decoration: none;
-    transition: color 0.2s;
-  }
-
-  .footer-links a:hover { color: var(--gold); }
-
-  /* ── ANIMATIONS ── */
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(24px); }
-    to   { opacity: 1; transform: translateY(0); }
-  }
-
-  @keyframes fadeIn {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-  }
-
-  /* ── RESPONSIVE ── */
-  @media (max-width: 960px) {
-    .hero { grid-template-columns: 1fr; }
-    .hero-right { display: none; }
-    #about, #operation-grace { grid-template-columns: 1fr; }
-    .programmes-header, .connect-grid { grid-template-columns: 1fr; }
-    .programme-grid { grid-template-columns: 1fr 1fr; }
-    .leadership-grid { grid-template-columns: 1fr 1fr; }
-    .nav-links { display: none; }
-    .about-pillars { grid-template-columns: 1fr; }
-  }
-
-  @media (max-width: 600px) {
-    section { padding: 72px 6vw; }
-    .programme-grid, .leadership-grid { grid-template-columns: 1fr; }
-  }
-</style>
+<link rel="stylesheet" href="css/style.css"/>
+<link rel="icon" type="image/jpeg" href="images/nyfdf-logo.jpg"/>
+<link rel="apple-touch-icon" href="images/nyfdf-logo.jpg"/>
 </head>
 <body>
 
 <!-- NAV -->
 <nav>
   <a href="#" class="nav-brand">
-    <div class="nav-emblem"><span>NYFDF</span></div>
-    <div class="nav-name">
-      Northgate Youth &amp; Family
-      <small>Development Foundation</small>
-    </div>
+    <img src="images/nyfdf-logo.jpg" alt="NYFDF Logo" class="nav-logo"/>
+    <div class="nav-name">Northgate Youth &amp; Family<small>Development Foundation</small></div>
   </a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#programmes">Programmes</a></li>
+    <li><a href="#reach">Our Reach</a></li>
     <li><a href="#leadership">Leadership</a></li>
     <li><a href="#operation-grace">Operation Grace</a></li>
-    <li><a href="#connect">Connect</a></li>
-    <li><a href="#connect" class="nav-cta">Get Involved</a></li>
+    <li><a href="#connect" class="nav-cta">Connect</a></li>
   </ul>
 </nav>
 
@@ -653,45 +31,31 @@
 <section class="hero" id="home">
   <div class="hero-bg-pattern"></div>
   <div class="hero-left">
-    <div class="hero-eyebrow">
-      <div class="hero-eyebrow-line"></div>
-      <span>Northgate Youth &amp; Family Development Foundation</span>
+    <div class="hero-logo">
+      <img src="images/nyfdf-logo.jpg" alt="NYFDF" class="hero-logo-img"/>
     </div>
-    <h1>
-      Building<br/>
-      <em>stronger</em><br/>
-      communities,<br/>
-      one family<br/>
-      at a time.
-    </h1>
-    <p class="hero-sub">
-      NYFDF is a community-centred foundation committed to the holistic development of youth, families, and individuals — through health, empowerment, education, and sustained presence where it matters most.
-    </p>
+    <div class="hero-eyebrow"><div class="hero-eyebrow-line"></div><span>Northgate Youth &amp; Family Development Foundation</span></div>
+    <h1>Empowering<br/><em>Youths…</em><br/>Developing<br/>Families…<br/>Defining the <em>Future.</em></h1>
+    <p class="hero-sub">Founded in Jamaica and incorporated in 2008, NYFDF is a charitable organisation with more than fifteen years of commitment to youth empowerment, family development, education, and community transformation across Jamaica.</p>
     <div class="hero-actions">
       <a href="#about" class="btn-primary">Our Mission</a>
-      <a href="#operation-grace" class="btn-outline">Operation Grace</a>
+      <a href="#programmes" class="btn-outline">What We Do</a>
     </div>
   </div>
   <div class="hero-right">
+    <div class="hero-ph">
+      <span class="ph-icon">📷</span>
+      <p class="ph-label">Community Photo</p>
+      <p class="ph-hint">Replace with: &lt;img src="images/hero.jpg" class="hero-img" alt="..."&gt;<br/>Authentic outreach or community moment — portrait, min 900×1100px, warm natural light</p>
+    </div>
+    <div class="hero-overlay"></div>
     <div class="hero-stat-card">
-      <p>"We do not parachute in. We show up, we stay, and we build — alongside the people who call these communities home."</p>
+      <p>"The Call is to save the children. The Call is to redemptively impact the social systems within which our children are brought up — and to give them hope and faith for a brighter tomorrow."</p>
       <div class="stat-row">
-        <div class="stat-item">
-          <span class="stat-num">6</span>
-          <span class="stat-label">Month Programme</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-num">3+</span>
-          <span class="stat-label">Communities Served</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-num">12+</span>
-          <span class="stat-label">Partner Agencies</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-num">500+</span>
-          <span class="stat-label">Lives Reached</span>
-        </div>
+        <div class="stat-item"><span class="stat-num">15+</span><span class="stat-label">Years of Service</span></div>
+        <div class="stat-item"><span class="stat-num">30+</span><span class="stat-label">Schools Reached</span></div>
+        <div class="stat-item"><span class="stat-num">2008</span><span class="stat-label">Incorporated</span></div>
+        <div class="stat-item"><span class="stat-num">6+</span><span class="stat-label">Parishes Active</span></div>
       </div>
     </div>
   </div>
@@ -699,26 +63,12 @@
 
 <!-- GOLD BAND -->
 <div class="gold-band">
-  <span class="gold-band-label">Our Focus Areas</span>
+  <span class="gold-band-label">Focus Areas</span>
   <div class="gold-band-divider"></div>
   <div style="overflow:hidden;flex:1">
     <div class="gold-band-scroll">
-      <span class="gold-band-item">Health &amp; Wellness</span>
-      <span class="gold-band-item">Youth Empowerment</span>
-      <span class="gold-band-item">Family Development</span>
-      <span class="gold-band-item">Disaster Recovery</span>
-      <span class="gold-band-item">Community Outreach</span>
-      <span class="gold-band-item">Mental Health Support</span>
-      <span class="gold-band-item">Substance Misuse Intervention</span>
-      <span class="gold-band-item">Educational Access</span>
-      <span class="gold-band-item">Health &amp; Wellness</span>
-      <span class="gold-band-item">Youth Empowerment</span>
-      <span class="gold-band-item">Family Development</span>
-      <span class="gold-band-item">Disaster Recovery</span>
-      <span class="gold-band-item">Community Outreach</span>
-      <span class="gold-band-item">Mental Health Support</span>
-      <span class="gold-band-item">Substance Misuse Intervention</span>
-      <span class="gold-band-item">Educational Access</span>
+      <span class="gold-band-item">Youth Empowerment</span><span class="gold-band-item">Family Development</span><span class="gold-band-item">Character Education</span><span class="gold-band-item">Health Outreach</span><span class="gold-band-item">Parenting Programmes</span><span class="gold-band-item">Technology Access</span><span class="gold-band-item">Community Outreach</span><span class="gold-band-item">Grief Counselling</span><span class="gold-band-item">Leadership Development</span><span class="gold-band-item">Disaster Recovery</span>
+      <span class="gold-band-item">Youth Empowerment</span><span class="gold-band-item">Family Development</span><span class="gold-band-item">Character Education</span><span class="gold-band-item">Health Outreach</span><span class="gold-band-item">Parenting Programmes</span><span class="gold-band-item">Technology Access</span><span class="gold-band-item">Community Outreach</span><span class="gold-band-item">Grief Counselling</span><span class="gold-band-item">Leadership Development</span><span class="gold-band-item">Disaster Recovery</span>
     </div>
   </div>
 </div>
@@ -726,48 +76,54 @@
 <!-- ABOUT -->
 <section id="about">
   <div class="about-text">
-    <div class="section-eyebrow">
-      <div class="section-eyebrow-line"></div>
-      <span>Who We Are</span>
-    </div>
-    <h2 class="section-title">Rooted in community.<br/><em>Driven by purpose.</em></h2>
-    <p class="section-body">
-      The Northgate Youth and Family Development Foundation (NYFDF) was established to address the systemic gaps in health, social support, and opportunity that affect youth and families across Jamaica. We believe that lasting change begins at the community level — and that every person deserves access to care, dignity, and the tools to thrive.
-    </p>
-    <p class="section-body" style="margin-top:16px;">
-      Our work spans health outreach, youth development, family counselling, disaster response, and community mobilisation. We partner with government agencies, health professionals, civil society, and corporate sponsors to deliver programmes that are not only responsive — but sustained.
-    </p>
-    <div class="about-pillars">
-      <div class="pillar">
-        <span class="pillar-icon">🤝</span>
-        <h4>Partnership</h4>
-        <p>We work alongside government, NGOs, and community leaders — not around them.</p>
+    <div class="section-eyebrow"><div class="section-eyebrow-line"></div><span>Who We Are</span></div>
+    <h2 class="section-title">Rooted in purpose.<br/><em>Committed to people.</em></h2>
+    <p class="about-body">The Northgate Youth and Family Development Foundation (NYFDF) is an expression of a vision to participate in the process of nation building in a constructive and meaningful way. We believe that successful nation building requires a deliberate focus on the strategic development of young people — and the family structures to which they belong.</p>
+    <p class="about-body">Growing out of more than ten years of youth and family development initiatives through the Northgate Centre for Global Impact, NYFDF was incorporated as a charitable organisation under the Companies Act of Jamaica on July 2, 2008. Our work spans education, health outreach, counselling, technology access, parenting empowerment, and sustained community development across Jamaica.</p>
+    <p class="about-body">We also partner with corporate entities on organisational policy, team culture, and strategic development — bringing the same values-based framework to institutional work that guides our community programmes.</p>
+    <div class="vision-mission">
+      <div class="vm-item">
+        <div class="vm-label">Vision</div>
+        <div class="vm-text">Empowering Parents &hellip; Developing Youths &hellip; Defining the Future</div>
       </div>
-      <div class="pillar">
-        <span class="pillar-icon">📍</span>
-        <h4>Presence</h4>
-        <p>We show up consistently. Our programmes run for months, not days.</p>
-      </div>
-      <div class="pillar">
-        <span class="pillar-icon">💡</span>
-        <h4>Empowerment</h4>
-        <p>We equip communities with tools, knowledge, and access — not dependency.</p>
-      </div>
-      <div class="pillar">
-        <span class="pillar-icon">❤️</span>
-        <h4>Dignity</h4>
-        <p>Every person who walks through our doors is treated with respect and care.</p>
+      <div class="vm-item">
+        <div class="vm-label">Mission</div>
+        <div class="vm-text">To impact and build young people with strategic initiatives designed to develop sound morals and pristine character — equipping youth to become productive, prosperous citizens who realise their God-given potential in every area of life.</div>
       </div>
     </div>
   </div>
-  <div class="about-visual">
+  <div class="about-right">
     <div class="about-quote-card">
-      <blockquote>
-        "Recovery from a storm isn't just about rebuilding houses. It's about rebuilding people — one screening, one conversation, one family at a time."
-      </blockquote>
-      <cite>— NYFDF Foundation Statement</cite>
+      <blockquote>"We are committed to encouraging individuals and organisations to go beyond perceived limitations — to develop their fullest capacity and discover their God-ordained destinies."</blockquote>
+      <cite>— Wesley Boynes, JP &nbsp;·&nbsp; Founder &amp; Chairman, NYFDF</cite>
     </div>
     <div class="about-accent-bar"></div>
+    <div class="affiliation-strip">
+      <div class="aff-label">Organisational Affiliations</div>
+      <div class="aff-items">
+        <div class="aff-item">EMPOWER Development — International Community Development Network</div>
+        <div class="aff-item">Council for Voluntary Social Services (CVSS) — Jamaica</div>
+        <div class="aff-item">Jamaica Independent Schools' Association (JISA)</div>
+        <div class="aff-item">NCTVET — National Council on Technical &amp; Vocational Education and Training</div>
+      </div>
+    </div>
+    <div class="img-ph" style="aspect-ratio:8/5;">
+      <span class="ph-icon">📷</span>
+      <p class="ph-label">Team or Community Photo</p>
+      <p class="ph-hint">Replace with &lt;img class="about-img"&gt; — candid team or community gathering, landscape ~600×380px, warm authentic expressions</p>
+    </div>
+  </div>
+</section>
+
+<!-- PILLARS -->
+<section id="pillars">
+  <div class="section-eyebrow"><div class="section-eyebrow-line"></div><span>Our Core Values</span></div>
+  <h2 class="section-title">The principles that<br/><em>guide everything we do.</em></h2>
+  <div class="pillars-grid">
+    <div class="pillar"><span class="pillar-icon">🌱</span><h4>Character First</h4><p>Lasting change begins from the inside out. Values, integrity, and character are the foundation of every programme we build.</p></div>
+    <div class="pillar"><span class="pillar-icon">🤝</span><h4>Strategic Partnership</h4><p>We collaborate with schools, government agencies, corporates, and faith communities to multiply impact and avoid duplication.</p></div>
+    <div class="pillar"><span class="pillar-icon">📍</span><h4>Sustained Presence</h4><p>Our programmes are designed for lasting engagement — not one-time interventions. We show up, and we stay.</p></div>
+    <div class="pillar"><span class="pillar-icon">🔑</span><h4>Accountability</h4><p>Every initiative is held to standards of financial responsibility, strong documentation, and measurable outcomes.</p></div>
   </div>
 </section>
 
@@ -775,84 +131,91 @@
 <section id="programmes">
   <div class="programmes-header">
     <div>
-      <div class="section-eyebrow">
-        <div class="section-eyebrow-line"></div>
-        <span>What We Do</span>
-      </div>
+      <div class="section-eyebrow"><div class="section-eyebrow-line"></div><span>What We Do</span></div>
       <h2 class="section-title">Programmes &amp;<br/><em>Initiatives</em></h2>
     </div>
-    <p class="programmes-intro">
-      Our programming is designed to meet communities at their point of need. From clinical health outreach to youth engagement and digital access — every initiative is shaped by the people it serves.
-    </p>
+    <p class="programmes-intro">Our programming is values-driven and community-shaped. From school-based character development to health clinics, parenting empowerment, and technology training — every initiative is designed to develop the whole person and build stronger families and communities.</p>
+  </div>
+  <div class="img-ph programmes-banner" style="aspect-ratio:16/5; margin-bottom:1px;">
+    <span class="ph-icon">📷</span>
+    <p class="ph-label">Programmes in Action</p>
+    <p class="ph-hint">Replace with &lt;img class="programmes-banner"&gt; — wide banner from a health fair, school session, or outreach activity, ~1400×500px</p>
   </div>
   <div class="programme-grid">
-    <div class="programme-card">
-      <span class="programme-num">01</span>
-      <h3>Community Health Outreach</h3>
-      <p>Free clinical screenings, health education, vaccinations, and linkage to care delivered directly into underserved communities.</p>
-    </div>
-    <div class="programme-card">
-      <span class="programme-num">02</span>
-      <h3>Operation Grace</h3>
-      <p>A 6-month monthly outreach programme serving communities affected by Hurricane Melissa, with targeted editions for specific demographics.</p>
-    </div>
-    <div class="programme-card">
-      <span class="programme-num">03</span>
-      <h3>Male Empowerment</h3>
-      <p>Dedicated programming to engage men in health, wellness, and family life — breaking barriers and building culture around self-care.</p>
-    </div>
-    <div class="programme-card">
-      <span class="programme-num">04</span>
-      <h3>Youth Development</h3>
-      <p>Mentorship, skills training, and recreational programming for young people to build confidence, character, and community ties.</p>
-    </div>
-    <div class="programme-card">
-      <span class="programme-num">05</span>
-      <h3>Counselling &amp; Mental Wellness</h3>
-      <p>Prayer support, professional counselling, and substance misuse intervention delivered with compassion and without judgment.</p>
-    </div>
-    <div class="programme-card">
-      <span class="programme-num">06</span>
-      <h3>Digital Access &amp; Inclusion</h3>
-      <p>Internet service booths and digital literacy support to bridge the connectivity gap in rural and underserved communities.</p>
+    <div class="programme-card"><span class="programme-num">01</span><h3>Character &amp; Leadership Development</h3><p>School-based seminars and community programmes equipping young people with leadership skills, moral values, and a sense of civic responsibility.</p></div>
+    <div class="programme-card"><span class="programme-num">02</span><h3>Parenting Empowerment</h3><p>Workshops and mentoring programmes — including the Northgate Parent Empowerment Place (N-PEP) — equipping parents and caregivers with tools to raise purpose-driven children.</p></div>
+    <div class="programme-card"><span class="programme-num">03</span><h3>Health &amp; Medical Outreach</h3><p>Community medical clinics and health fairs delivering free screening, dental services, nutritional counselling, and health education — including the annual Northgate Clinic and Operation Grace.</p></div>
+    <div class="programme-card"><span class="programme-num">04</span><h3>Project Esther</h3><p>A ten-week character development programme providing mentoring, counselling, and activation for young women — including those transitioning out of state residential facilities at age eighteen.</p></div>
+    <div class="programme-card"><span class="programme-num">05</span><h3>Technology Access — C-TEC</h3><p>An NCTVET-accredited Community Technological Empowerment Centre offering certified Data Operations training, digital literacy, and technology access for individuals, youth, and organisations.</p></div>
+    <div class="programme-card"><span class="programme-num">06</span><h3>Financial Literacy — Youth $$ Programme</h3><p>Delivered in collaboration with The Consulting Interface (Trinidad &amp; Tobago), this programme exposes young people to money management, enterprise, and economic citizenship.</p></div>
+  </div>
+</section>
+
+<!-- REACH -->
+<section id="reach">
+  <div class="section-eyebrow"><div class="section-eyebrow-line"></div><span>Impact &amp; Reach</span></div>
+  <h2 class="section-title" style="color:var(--white)">A record of <em style="color:var(--gold)">meaningful work</em><br/>across Jamaica.</h2>
+  <p style="font-size:16px;line-height:1.8;font-weight:300;color:rgba(255,255,255,0.5);max-width:620px;margin-bottom:52px;">Over more than fifteen years, NYFDF has engaged schools, communities, and organisations across six Jamaican parishes — and beyond our shores.</p>
+  <div class="reach-grid">
+    <div class="reach-card"><div class="reach-card-label">Education</div><h4>30+ Schools Engaged</h4><p>From infant schools to high schools and skills training centres across St. Ann, St. Mary, St. James, Trelawny, Kingston, and beyond.</p></div>
+    <div class="reach-card"><div class="reach-card-label">Community</div><h4>Multi-Parish Outreach</h4><p>Health clinics, grief counselling, feeding programmes, character development, and community initiatives delivered across Jamaica since 2008.</p></div>
+    <div class="reach-card"><div class="reach-card-label">Institutions</div><h4>Government &amp; Corporate Partners</h4><p>Active relationships with the Ministry of Health, Ministry of Education, NCB, Digicel, Guardian Life, HEART Trust, and the Child Development Agency.</p></div>
+    <div class="reach-card"><div class="reach-card-label">Regional</div><h4>Caribbean Engagement</h4><p>Sent delegations to the Eastern Caribbean and Jamaica Youth Encounter (ECJYE) in Antigua; hosted approximately 256 young people from across the Caribbean in Jamaica in 2017.</p></div>
+    <div class="reach-card"><div class="reach-card-label">Corrections</div><h4>Tower Street Facility</h4><p>Male Character Development sessions and educational materials provided to young men at the Tower Street Adult Correctional Facility, 2016.</p></div>
+    <div class="reach-card"><div class="reach-card-label">Education — Secondary</div><h4>NorthGate High School</h4><p>Founded in Ocho Rios in September 2012, NGH delivers values-based secondary education focused on developing leaders of pristine character and academic excellence.</p></div>
+  </div>
+  <div style="margin-top:12px;">
+    <div class="section-eyebrow" style="margin-bottom:24px;"><div class="section-eyebrow-line"></div><span>Recognition &amp; Awards</span></div>
+    <div class="achievements">
+      <div class="achievement-item"><div class="ach-source">CVSS / British High Commission</div><p>Certificate of Completion — Institutional Strengthening and Training Support for Jamaican Non-Government Organisations</p></div>
+      <div class="achievement-item"><div class="ach-source">CVSS / British High Commission</div><p>Most Outstanding Performance — Institutional Strengthening and Training Support for Jamaican NGOs</p></div>
+      <div class="achievement-item"><div class="ach-source">Office of the Prime Minister — 2012</div><p>Nominee — Prime Minister Youth Service Organisation Awards, in recognition of outstanding contribution to the empowerment of Jamaica's youth</p></div>
+      <div class="achievement-item"><div class="ach-source">Office of the Prime Minister — 2011</div><p>Nominee — Prime Minister Youth Service Organisation Awards, in recognition of outstanding contribution to the empowerment of Jamaica's youth</p></div>
     </div>
   </div>
 </section>
 
 <!-- LEADERSHIP -->
 <section id="leadership">
-  <div class="section-eyebrow">
-    <div class="section-eyebrow-line"></div>
-    <span>The People Behind the Work</span>
-  </div>
-  <h2 class="section-title" style="color:var(--white)">Our <em style="color:var(--gold)">Leadership</em> Team</h2>
-  <p class="section-body" style="color:rgba(255,255,255,0.5);margin-bottom:52px;">
-    NYFDF is led by a team of dedicated individuals who bring professional expertise, lived experience, and genuine care for the communities we serve. [Update with actual names and bios.]
-  </p>
-  <div class="leadership-grid">
-    <div class="leader-card">
-      <div class="leader-avatar">CH</div>
-      <div class="leader-name">[Chairman's Name]</div>
-      <div class="leader-title">Chairman &amp; Founder</div>
-      <p class="leader-bio">Visionary leader and driving force behind NYFDF's founding mission. Brings decades of community development and public service experience.</p>
+  <div class="section-eyebrow"><div class="section-eyebrow-line"></div><span>The People Behind the Work</span></div>
+  <h2 class="section-title">Our <em>Leadership</em></h2>
+  <div class="leadership-layout">
+    <div class="chairman-card">
+      <div class="chairman-avatar">WB</div>
+      <div class="chairman-name">Wesley Curwin Boynes, JP</div>
+      <div class="chairman-creds">Founder &amp; Chairman &nbsp;·&nbsp; Justice of the Peace, St. Mary</div>
+      <p class="chairman-bio">Born in San Fernando, Trinidad and Tobago, Wesley Boynes has spent more than two decades in strategic leadership, community development, and human capacity building across Jamaica. He serves as Senior Elder at Philadelphia Life Centre, has been a Justice of the Peace for St. Mary since 2018, and is a current board leader in Jamaican independent education. He calls himself simply a life developer — driven by the belief that every person carries unrealised potential waiting to be unlocked.</p>
+      <div class="chairman-highlights">
+        <div class="ch-highlight"><span>Founder and Chairman, NYFDF — since 2008</span></div>
+        <div class="ch-highlight"><span>Current President, Jamaica Independent Schools' Association (JISA)</span></div>
+        <div class="ch-highlight"><span>Past President, JISA — 2013 to 2017; spearheaded JISA Week, proclaimed by the Governor General</span></div>
+        <div class="ch-highlight"><span>Lead Facilitator, Ministry of Education Camp Triple C Parent Edition Programme</span></div>
+        <div class="ch-highlight"><span>Former Member, Board of the National College of Education Leadership</span></div>
+        <div class="ch-highlight"><span>Former Member, Board of Commissioners / Overseas Examination Commission</span></div>
+      </div>
     </div>
-    <div class="leader-card">
-      <div class="leader-avatar">ED</div>
-      <div class="leader-name">[Executive Director]</div>
-      <div class="leader-title">Executive Director</div>
-      <p class="leader-bio">Oversees operations, partnerships, and programme delivery. Committed to ensuring every initiative meets the foundation's standards of care and impact.</p>
-    </div>
-    <div class="leader-card">
-      <div class="leader-avatar">PD</div>
-      <div class="leader-name">[Programme Director]</div>
-      <div class="leader-title">Director of Programmes</div>
-      <p class="leader-bio">Designs and manages NYFDF's community outreach portfolio, working closely with health professionals and partner agencies on the ground.</p>
-    </div>
-    <div class="leader-card">
-      <div class="leader-avatar">CM</div>
-      <div class="leader-name">[Community Manager]</div>
-      <div class="leader-title">Community Engagement Lead</div>
-      <p class="leader-bio">The bridge between NYFDF and the communities it serves. Leads mobilisation, volunteer coordination, and local stakeholder relationships.</p>
+    <div class="board-section">
+      <h3>Governance Structure</h3>
+      <div class="board-cards">
+        <div class="board-card">
+          <div class="board-card-title">Board of Directors</div>
+          <div class="board-card-name">Chaired by Pastor Wesley Boynes</div>
+          <p class="board-card-desc">Provides vision, governance and oversight of the Foundation.</p>
+        </div>
+        <div class="board-card">
+          <div class="board-card-title">Advisory Board</div>
+          <p class="board-card-desc">Provides an objective perspective on all operations of the Foundation, while offering practical resources and recommendations that enhance efforts and effectiveness.</p>
+        </div>
+        <div class="board-card">
+          <div class="board-card-title">Management Team</div>
+          <p class="board-card-desc">Oversees day-to-day operations of the Foundation — in particular in the areas of administration, programme development, and corporate services.</p>
+        </div>
+        <div class="board-card">
+          <div class="board-card-title">Project Volunteers</div>
+          <div class="board-card-name">Coordinators &amp; Team Members</div>
+          <p class="board-card-desc">Their skills, expertise, time, and resources ensure that stated programme objectives are met with a very wide yet deep impact.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -860,158 +223,118 @@
 <!-- OPERATION GRACE -->
 <section id="operation-grace">
   <div>
-    <div class="section-eyebrow">
-      <div class="section-eyebrow-line"></div>
-      <span>Flagship Programme</span>
-    </div>
+    <div class="section-eyebrow"><div class="section-eyebrow-line"></div><span>Current Flagship Initiative</span></div>
     <h2 class="section-title">Operation<br/><em style="color:var(--gold-light)">Grace</em></h2>
-    <p class="section-body" style="margin-bottom:28px;">
-      Launched in response to the devastation caused by Hurricane Melissa, Operation Grace is NYFDF's flagship community recovery programme — a six-month series of monthly outreach events serving affected communities across Jamaica.
-    </p>
-    <p class="section-body" style="margin-bottom:40px;">
-      Each edition is designed around a specific community need — from general health screening to male empowerment, women's wellness, and youth engagement. Cambridge St. James is our current home for 2026.
-    </p>
+    <p class="grace-body">Launched in response to Hurricane Melissa, Operation Grace is NYFDF's 2026 community recovery programme — a six-month series of monthly outreach events serving communities in Cambridge St. James.</p>
+    <p class="grace-body">Each edition is themed around a specific need — from general health screening to male empowerment, women's wellness, and youth development. Every event integrates clinical care, counselling, recreation, digital access, and care packages.</p>
+    <p class="grace-body" style="margin-bottom:40px;">Operation Grace reflects what NYFDF has always done: show up consistently, serve holistically, and treat every person with dignity.</p>
     <a href="#connect" class="btn-primary" style="background:var(--gold);color:var(--ink);">Partner With Us</a>
   </div>
   <div class="grace-timeline">
-    <div class="grace-month">
-      <div class="grace-month-num">1</div>
-      <div class="grace-month-content">
-        <span class="grace-month-tag">March 2026 — Complete</span>
-        <h4>Community Launch Edition</h4>
-        <p>General health outreach and community introduction. Cambridge St. James.</p>
-      </div>
-    </div>
-    <div class="grace-month">
-      <div class="grace-month-num">2</div>
-      <div class="grace-month-content">
-        <span class="grace-month-tag">April 2026 — Current</span>
-        <h4>Male Empowerment Edition</h4>
-        <p>"Big Man Ting Dis" — Focused on men's health, family wellness, and community recreation.</p>
-      </div>
-    </div>
-    <div class="grace-month">
-      <div class="grace-month-num">3</div>
-      <div class="grace-month-content">
-        <span class="grace-month-tag">May 2026 — Upcoming</span>
-        <h4>Women &amp; Family Edition</h4>
-        <p>Dedicated programming for women, mothers, and family units.</p>
-      </div>
-    </div>
-    <div class="grace-month">
-      <div class="grace-month-num">4</div>
-      <div class="grace-month-content">
-        <span class="grace-month-tag">June 2026</span>
-        <h4>Youth &amp; Education Edition</h4>
-        <p>Targeting young people with mentorship, skills, and opportunity.</p>
-      </div>
-    </div>
-    <div class="grace-month">
-      <div class="grace-month-num">5</div>
-      <div class="grace-month-content">
-        <span class="grace-month-tag">July 2026</span>
-        <h4>Senior Wellness Edition</h4>
-        <p>Health screening and social support for elderly community members.</p>
-      </div>
-    </div>
-    <div class="grace-month">
-      <div class="grace-month-num">6</div>
-      <div class="grace-month-content">
-        <span class="grace-month-tag">August 2026</span>
-        <h4>Community Celebration &amp; Closing</h4>
-        <p>A culminating celebration of six months of presence, healing, and growth.</p>
-      </div>
-    </div>
+    <div class="grace-month"><div class="grace-month-num">1</div><div class="grace-month-content"><span class="grace-tag">March 2026 — Complete</span><h4>Community Launch Edition</h4><p>General health outreach and introduction. Cambridge St. James.</p></div></div>
+    <div class="grace-month"><div class="grace-month-num">2</div><div class="grace-month-content"><span class="grace-tag">April 2026 — Current</span><h4>Male Empowerment Edition</h4><p>"Big Man Ting Dis" — Men's health, family wellness, and community recreation.</p></div></div>
+    <div class="grace-month"><div class="grace-month-num">3</div><div class="grace-month-content"><span class="grace-tag">May 2026</span><h4>Women &amp; Family Edition</h4><p>Dedicated programming for women, mothers, and family units.</p></div></div>
+    <div class="grace-month"><div class="grace-month-num">4</div><div class="grace-month-content"><span class="grace-tag">June 2026</span><h4>Youth &amp; Education Edition</h4><p>Mentorship, skills, and opportunity for young people.</p></div></div>
+    <div class="grace-month"><div class="grace-month-num">5</div><div class="grace-month-content"><span class="grace-tag">July 2026</span><h4>Senior Wellness Edition</h4><p>Health screening and social support for elderly community members.</p></div></div>
+    <div class="grace-month"><div class="grace-month-num">6</div><div class="grace-month-content"><span class="grace-tag">August 2026</span><h4>Community Celebration &amp; Closing</h4><p>A culminating celebration of six months of presence, healing, and growth.</p></div></div>
   </div>
 </section>
 
 <!-- CONNECT -->
 <section id="connect">
-  <div class="section-eyebrow">
-    <div class="section-eyebrow-line"></div>
-    <span>Stay Connected</span>
+  <div id="fb-root"></div>
+  <div class="section-eyebrow"><div class="section-eyebrow-line"></div><span>Stay Connected</span></div>
+  <h2 class="section-title connect-title">Follow us for<br/><em>live updates.</em></h2>
+  <p class="connect-intro">All stories, photos, announcements, and event coverage from NYFDF are published on our social channels. Follow us to stay in the loop.</p>
+
+  <div class="feeds-grid">
+    <div class="feed-block">
+      <div class="feed-block-header">
+        <span class="feed-platform-icon" style="color:#1877F2;">📘</span>
+        <div>
+          <div class="feed-platform-label">Facebook</div>
+          <div class="feed-platform-handle">NYFDF</div>
+        </div>
+        <a href="https://www.facebook.com/nyfdf/" target="_blank" class="feed-follow-link">Follow →</a>
+      </div>
+      <div class="feed-block-body">
+        <div class="fb-page"
+          data-href="https://www.facebook.com/nyfdf/"
+          data-tabs="timeline"
+          data-height="480"
+          data-adapt-container-width="true"
+          data-small-header="true"
+          data-hide-cover="false"
+          data-show-facepile="false">
+        </div>
+      </div>
+    </div>
+
+    <div class="feed-block">
+      <div class="feed-block-header">
+        <span class="feed-platform-icon" style="color:#1DA1F2;">🐦</span>
+        <div>
+          <div class="feed-platform-label">X / Twitter</div>
+          <div class="feed-platform-handle">@nyfdf</div>
+        </div>
+        <a href="https://twitter.com/nyfdf" target="_blank" class="feed-follow-link">Follow →</a>
+      </div>
+      <div class="feed-block-body">
+        <a class="twitter-timeline"
+          href="https://twitter.com/nyfdf"
+          data-tweet-limit="3"
+          data-chrome="noheader nofooter noborders transparent"
+          data-theme="dark">Posts by @nyfdf</a>
+      </div>
+    </div>
   </div>
-  <h2 class="section-title">Follow Our Work.<br/><em>Join the Movement.</em></h2>
-  <div class="connect-grid">
-    <div class="social-channels">
-      <a href="https://instagram.com/nyfdf" target="_blank" class="social-card">
-        <div class="social-icon" style="background:#fce4ec;">📸</div>
-        <div class="social-info">
-          <div class="social-platform">Instagram</div>
-          <div class="social-handle">@nyfdf</div>
+
+  <div class="also-on">
+    <span class="also-on-label">Also find us on</span>
+    <div class="also-on-cards">
+      <a href="https://www.instagram.com/nyfdfoundation" target="_blank" class="also-on-card">
+        <span class="aoc-icon">📸</span>
+        <div>
+          <div class="aoc-platform">Instagram</div>
+          <div class="aoc-handle">@nyfdfoundation</div>
         </div>
-        <div class="social-followers">Follow →</div>
+        <span class="aoc-cta">Follow →</span>
       </a>
-      <a href="https://facebook.com/nyfdf" target="_blank" class="social-card">
-        <div class="social-icon" style="background:#e3f2fd;">📘</div>
-        <div class="social-info">
-          <div class="social-platform">Facebook</div>
-          <div class="social-handle">NYFDF Official</div>
+      <a href="https://youtube.com/@nyfdf" target="_blank" class="also-on-card">
+        <span class="aoc-icon">▶️</span>
+        <div>
+          <div class="aoc-platform">YouTube</div>
+          <div class="aoc-handle">NYFDF Foundation</div>
         </div>
-        <div class="social-followers">Like &amp; Follow →</div>
-      </a>
-      <a href="https://youtube.com/@nyfdf" target="_blank" class="social-card">
-        <div class="social-icon" style="background:#ffebee;">▶️</div>
-        <div class="social-info">
-          <div class="social-platform">YouTube</div>
-          <div class="social-handle">NYFDF Foundation</div>
-        </div>
-        <div class="social-followers">Subscribe →</div>
-      </a>
-      <a href="https://twitter.com/nyfdf" target="_blank" class="social-card">
-        <div class="social-icon" style="background:#e8f5e9;">🐦</div>
-        <div class="social-info">
-          <div class="social-platform">X / Twitter</div>
-          <div class="social-handle">@nyfdf</div>
-        </div>
-        <div class="social-followers">Follow →</div>
+        <span class="aoc-cta">Subscribe →</span>
       </a>
     </div>
-    <div class="contact-block">
-      <h3>Get in touch<br/>with the foundation.</h3>
-      <div class="contact-item">
-        <span class="contact-icon">📍</span>
-        <div>
-          <div class="contact-label">Address</div>
-          <div class="contact-value">Northgate, Jamaica [Update with full address]</div>
-        </div>
-      </div>
-      <div class="contact-item">
-        <span class="contact-icon">📧</span>
-        <div>
-          <div class="contact-label">Email</div>
-          <div class="contact-value">info@nyfdf.org</div>
-        </div>
-      </div>
-      <div class="contact-item">
-        <span class="contact-icon">📞</span>
-        <div>
-          <div class="contact-label">Phone</div>
-          <div class="contact-value">[Foundation contact number]</div>
-        </div>
-      </div>
-      <div class="contact-item">
-        <span class="contact-icon">💬</span>
-        <div>
-          <div class="contact-label">WhatsApp</div>
-          <div class="contact-value">[WhatsApp number for outreach enquiries]</div>
-        </div>
-      </div>
-    </div>
+  </div>
+
+  <div class="contact-bar">
+    <div class="contact-item-inline"><span class="ci-icon">📍</span><div><div class="ci-label">Address</div><div class="ci-val">Ocho Rios, Saint Ann, Jamaica</div></div></div>
+    <div class="contact-item-inline"><span class="ci-icon">📧</span><div><div class="ci-label">Email</div><div class="ci-val">info@nyfdf.org</div></div></div>
+    <div class="contact-item-inline"><span class="ci-icon">📞</span><div><div class="ci-label">Phone</div><div class="ci-val">[Contact number — to be updated]</div></div></div>
+    <div class="contact-item-inline"><span class="ci-icon">💬</span><div><div class="ci-label">WhatsApp</div><div class="ci-val">[WhatsApp number — to be updated]</div></div></div>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-brand">NYFDF <span>·</span> Northgate Youth &amp; Family Development Foundation</div>
-  <div class="footer-links">
-    <a href="#about">About</a>
-    <a href="#programmes">Programmes</a>
-    <a href="#leadership">Leadership</a>
-    <a href="#connect">Contact</a>
+  <div>
+    <div class="footer-brand">
+      <img src="images/nyfdf-logo.jpg" alt="NYFDF" class="footer-logo"/>
+      NYFDF <span>·</span> Northgate Youth &amp; Family Development Foundation
+    </div>
+    <div class="footer-tagline">Empowering Youths &hellip; Developing Families &hellip; Defining the Future</div>
   </div>
-  <div class="footer-legal">© 2026 NYFDF. All rights reserved.</div>
+  <div class="footer-links">
+    <a href="#about">About</a><a href="#programmes">Programmes</a><a href="#reach">Reach</a><a href="#leadership">Leadership</a><a href="#connect">Contact</a>
+  </div>
+  <div class="footer-legal">© 2026 NYFDF. Incorporated under the Companies Act of Jamaica, 2008.</div>
 </footer>
 
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0"></script>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
 </html>
