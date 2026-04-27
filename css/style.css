@@ -510,9 +510,40 @@
 
   .connect-intro {
     font-size: 17px; line-height: 1.85; font-weight: 300;
-    color: rgba(255,255,255,0.5); max-width: 640px; margin-bottom: 52px;
+    color: rgba(255,255,255,0.5); max-width: 640px; margin-bottom: 48px;
   }
 
+  /* All-channels strip — equal weight for every platform */
+  .channels-strip {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px;
+    background: rgba(26,79,168,0.25);
+    margin-bottom: 48px;
+  }
+
+  .channel-card {
+    background: rgba(255,255,255,0.04);
+    padding: 36px 28px;
+    display: flex; flex-direction: column;
+    text-decoration: none; position: relative; overflow: hidden;
+    transition: background 0.25s, transform 0.2s;
+  }
+  .channel-card:hover { background: rgba(255,255,255,0.09); transform: translateY(-3px); }
+
+  .cc-accent { position: absolute; top: 0; left: 0; right: 0; height: 3px; }
+  .cc-icon { font-size: 34px; margin-bottom: 10px; }
+  .cc-platform { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,0.3); font-weight: 500; margin-bottom: 4px; }
+  .cc-handle { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 600; color: var(--white); line-height: 1.1; }
+  .cc-cta { margin-top: auto; padding-top: 20px; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); font-weight: 500; }
+
+  /* Divider between channel cards and live feeds */
+  .feeds-heading {
+    display: flex; align-items: center; gap: 16px;
+    margin-bottom: 24px;
+  }
+  .feeds-heading-line { flex: 1; height: 1px; background: rgba(26,79,168,0.2); }
+  .feeds-heading-text { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,0.2); font-weight: 500; white-space: nowrap; }
+
+  /* Live feed embeds */
   .feeds-grid {
     display: grid; grid-template-columns: 1fr 1fr; gap: 24px;
     margin-bottom: 40px;
@@ -533,16 +564,8 @@
   }
 
   .feed-platform-icon { font-size: 28px; flex-shrink: 0; }
-
-  .feed-platform-label {
-    font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
-    color: rgba(255,255,255,0.3); font-weight: 500; margin-bottom: 2px;
-  }
-
-  .feed-platform-handle {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 22px; font-weight: 600; color: var(--white); line-height: 1;
-  }
+  .feed-platform-label { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,0.3); font-weight: 500; margin-bottom: 2px; }
+  .feed-platform-handle { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 600; color: var(--white); line-height: 1; }
 
   .feed-follow-link {
     margin-left: auto; flex-shrink: 0;
@@ -552,38 +575,7 @@
   }
   .feed-follow-link:hover { opacity: 0.75; }
 
-  .feed-block-body {
-    padding: 0;
-    min-height: 480px;
-  }
-
-  .also-on {
-    display: flex; align-items: center; gap: 24px;
-    padding: 32px 0;
-    border-top: 1px solid rgba(26,79,168,0.2);
-    flex-wrap: wrap;
-  }
-
-  .also-on-label {
-    font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
-    color: rgba(255,255,255,0.3); font-weight: 500; white-space: nowrap;
-  }
-
-  .also-on-cards { display: flex; gap: 16px; flex-wrap: wrap; }
-
-  .also-on-card {
-    display: flex; align-items: center; gap: 12px;
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(26,79,168,0.2);
-    padding: 14px 20px; border-radius: 4px;
-    text-decoration: none; transition: background 0.25s;
-  }
-  .also-on-card:hover { background: rgba(255,255,255,0.08); }
-
-  .aoc-icon { font-size: 22px; flex-shrink: 0; }
-  .aoc-platform { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,0.3); font-weight: 500; margin-bottom: 2px; }
-  .aoc-handle { font-size: 15px; font-weight: 500; color: var(--white); }
-  .aoc-cta { margin-left: 12px; flex-shrink: 0; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); font-weight: 500; }
+  .feed-block-body { padding: 0; min-height: 420px; }
 
   .contact-bar {
     display: flex; flex-wrap: wrap;
@@ -667,6 +659,7 @@
     .hero-right { display: none; }
     #about, #operation-grace, .leadership-layout, .programmes-header { grid-template-columns: 1fr; }
     .pillars-grid, .reach-grid, .programme-grid { grid-template-columns: 1fr 1fr; }
+    .channels-strip { grid-template-columns: repeat(2, 1fr); }
     .feeds-grid { grid-template-columns: 1fr; }
     .achievements { grid-template-columns: 1fr; }
     .nav-links { display: none; }
@@ -679,4 +672,6 @@
   @media (max-width: 600px) {
     section { padding: 72px 6vw; }
     .programme-grid, .pillars-grid, .reach-grid, .feeds-grid { grid-template-columns: 1fr; }
+    .channels-strip { grid-template-columns: repeat(2, 1fr); }
+    .channel-card { padding: 28px 20px; }
   }
