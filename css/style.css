@@ -423,7 +423,7 @@
 
   .chairman-card { background: var(--ink); padding: 52px 48px; position: relative; overflow: hidden; }
   .chairman-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--teal), var(--gold)); }
-  .chairman-avatar { width: 72px; height: 72px; border-radius: 50%; background: var(--teal); display: flex; align-items: center; justify-content: center; margin-bottom: 24px; font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 700; color: var(--white); border: 2px solid rgba(200,149,42,0.5); }
+  .chairman-photo { width: 160px; height: 160px; border-radius: 50%; object-fit: cover; object-position: center top; margin-bottom: 18px; border: 3px solid rgba(200,149,42,0.6); display: block; }
   .chairman-name { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 600; color: var(--white); margin-bottom: 4px; }
   .chairman-creds { font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); font-weight: 400; margin-bottom: 20px; }
   .chairman-bio { font-size: 15px; color: rgba(255,255,255,0.6); line-height: 1.8; font-weight: 300; margin-bottom: 28px; }
