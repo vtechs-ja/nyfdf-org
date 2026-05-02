@@ -340,11 +340,14 @@
     background: linear-gradient(90deg, var(--teal) 0%, var(--gold) 100%);
   }
 
-  .affiliation-strip { margin-top: 24px; background: var(--white); padding: 24px 28px; border-left: 3px solid var(--teal); }
-  .aff-label { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--grey); font-weight: 500; margin-bottom: 12px; }
-  .aff-items { display: flex; flex-direction: column; gap: 8px; }
-  .aff-item { font-size: 14px; color: var(--ink); font-weight: 400; display: flex; align-items: baseline; gap: 8px; }
+  .affiliation-strip { margin-top: 24px; background: var(--gold-light); padding: 28px 32px; border-left: 4px solid var(--gold); }
+  .aff-label { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--grey); font-weight: 600; margin-bottom: 16px; }
+  .aff-items { display: flex; flex-direction: column; gap: 10px; }
+  .aff-item { font-size: 14px; color: var(--ink); font-weight: 500; display: flex; align-items: baseline; gap: 8px; }
   .aff-item::before { content: '—'; color: var(--gold); font-size: 10px; flex-shrink: 0; }
+  .aff-link { color: var(--ink); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s, color 0.2s; }
+  .aff-link:hover { color: var(--teal); border-bottom-color: var(--teal); }
+  .aff-ext { font-size: 11px; color: var(--gold); margin-left: 2px; }
 
   /* ── PILLARS ── */
   #pillars { background: var(--white); padding: 80px 7vw; }
