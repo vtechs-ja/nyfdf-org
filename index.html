@@ -36,7 +36,7 @@
     </div>
     <div class="hero-eyebrow"><div class="hero-eyebrow-line"></div><span>Northgate Youth &amp; Family Development Foundation</span></div>
     <h1>Empowering<br/><em>Families…</em><br/>Developing<br/>Youths…<br/>Defining the <em>Future.</em></h1>
-    <p class="hero-sub">Founded in Jamaica and incorporated in 2008, NYFDF is a charitable organisation with more than fifteen years of commitment to youth empowerment, family development, education, and community transformation across Jamaica.</p>
+    <p class="hero-sub">Founded in Jamaica and incorporated in 2008, NYFDF is a charitable organisation with more than eighteen years of commitment to youth empowerment, family development, education, and community transformation across Jamaica.</p>
     <div class="hero-actions">
       <a href="#about" class="btn-primary">Our Mission</a>
       <a href="#programmes" class="btn-outline">What We Do</a>
@@ -52,7 +52,7 @@
     <div class="hero-stat-card">
       <p>"The Call is to save the children. The Call is to redemptively impact the social systems within which our children are brought up — and to give them hope and faith for a brighter tomorrow."</p>
       <div class="stat-row">
-        <div class="stat-item"><span class="stat-num">18+</span><span class="stat-label">Years of Service</span></div>
+        <div class="stat-item"><span class="stat-num" id="stat-years">18+</span><span class="stat-label">Years of Service</span></div>
         <div class="stat-item"><span class="stat-num">30+</span><span class="stat-label">Schools Reached</span></div>
         <div class="stat-item"><span class="stat-num">2008</span><span class="stat-label">Incorporated</span></div>
         <div class="stat-item"><span class="stat-num">6+</span><span class="stat-label">Parishes Active</span></div>
@@ -101,10 +101,10 @@
     <div class="affiliation-strip">
       <div class="aff-label">Organisational Affiliations</div>
       <div class="aff-items">
-        <div class="aff-item"><a href="https://www.congressempower.org/" target="_blank" rel="noopener" class="aff-link">EMPOWER Development — International Community Development Network <span class="aff-ext">↗</span></a></div>
-        <div class="aff-item"><a href="https://cvssja.org/" target="_blank" rel="noopener" class="aff-link">Council for Voluntary Social Services (CVSS) — Jamaica <span class="aff-ext">↗</span></a></div>
-        <div class="aff-item">Jamaica Independent Schools' Association (JISA)</div>
-        <div class="aff-item"><a href="https://www.nctvetjamaica.org/" target="_blank" rel="noopener" class="aff-link">NCTVET — National Council on Technical &amp; Vocational Education and Training <span class="aff-ext">↗</span></a></div>
+        <div class="aff-item"><img src="images/empower-logo.png" alt="EMPOWER Development" class="aff-logo"/><a href="https://www.congressempower.org/" target="_blank" rel="noopener" class="aff-link">EMPOWER Development — International Community Development Network <span class="aff-ext">↗</span></a></div>
+        <div class="aff-item"><img src="images/cvss-logo.png" alt="CVSS Jamaica" class="aff-logo"/><a href="https://cvssja.org/" target="_blank" rel="noopener" class="aff-link">Council for Voluntary Social Services (CVSS) — Jamaica <span class="aff-ext">↗</span></a></div>
+        <div class="aff-item"><img src="images/jisa-logo.jpg" alt="JISA" class="aff-logo"/>Jamaica Independent Schools' Association (JISA)</div>
+        <div class="aff-item"><img src="images/nctvet-logo.jpg" alt="NCTVET" class="aff-logo"/><a href="https://www.nctvetjamaica.org/" target="_blank" rel="noopener" class="aff-link">NCTVET — National Council on Technical &amp; Vocational Education and Training <span class="aff-ext">↗</span></a></div>
       </div>
     </div>
     <div class="img-ph" style="aspect-ratio:8/5;">
@@ -155,7 +155,7 @@
 <section id="reach">
   <div class="section-eyebrow"><div class="section-eyebrow-line"></div><span>Impact &amp; Reach</span></div>
   <h2 class="section-title" style="color:var(--white)">A record of <em style="color:var(--gold)">meaningful work</em><br/>across Jamaica.</h2>
-  <p style="font-size:16px;line-height:1.8;font-weight:300;color:rgba(255,255,255,0.5);max-width:620px;margin-bottom:52px;">Over more than fifteen years, NYFDF has engaged schools, communities, and organisations across six Jamaican parishes — and beyond our shores.</p>
+  <p style="font-size:16px;line-height:1.8;font-weight:300;color:rgba(255,255,255,0.5);max-width:620px;margin-bottom:52px;">Over more than eighteen years, NYFDF has engaged schools, communities, and organisations across six Jamaican parishes — and beyond our shores.</p>
   <div class="reach-grid">
     <div class="reach-card"><div class="reach-card-label">Education</div><h4>30+ Schools Engaged</h4><p>From infant schools to high schools and skills training centres across St. Ann, St. Mary, St. James, Trelawny, Kingston, and beyond.</p></div>
     <div class="reach-card"><div class="reach-card-label">Community</div><h4>Multi-Parish Outreach</h4><p>Health clinics, grief counselling, feeding programmes, character development, and community initiatives delivered across Jamaica since 2008.</p></div>
@@ -319,9 +319,16 @@
   <div class="footer-links">
     <a href="#about">About</a><a href="#programmes">Programmes</a><a href="#reach">Reach</a><a href="#leadership">Leadership</a><a href="#connect">Contact</a>
   </div>
-  <div class="footer-legal">© 2026 NYFDF. Incorporated under the Companies Act of Jamaica, 2008.</div>
+  <div class="footer-legal">© <span id="footer-year">2026</span> NYFDF. Incorporated under the Companies Act of Jamaica, 2008.</div>
 </footer>
 
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0"></script>
+<script>
+  (function() {
+    var y = new Date().getFullYear();
+    document.getElementById('stat-years').textContent = (y - 2008) + '+';
+    document.getElementById('footer-year').textContent = y;
+  })();
+</script>
 </body>
 </html>
