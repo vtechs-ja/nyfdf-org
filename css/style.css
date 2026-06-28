@@ -556,7 +556,7 @@
   .channel-card:hover { background: rgba(255,255,255,0.09); transform: translateY(-3px); }
 
   .cc-accent { position: absolute; top: 0; left: 0; right: 0; height: 3px; }
-  .cc-icon { font-size: 34px; margin-bottom: 10px; }
+  .cc-icon { font-size: 34px; margin-bottom: 10px; display: flex; align-items: center; height: 40px; }
   .cc-platform { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,0.3); font-weight: 500; margin-bottom: 4px; }
   .cc-handle { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 600; color: var(--white); line-height: 1.1; }
   .cc-cta { margin-top: auto; padding-top: 20px; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); font-weight: 500; }
