@@ -188,7 +188,7 @@
 
   .hero-overlay {
     position: absolute; inset: 0;
-    background: linear-gradient(to top, rgba(10,22,40,0.94) 0%, rgba(10,22,40,0.25) 55%, rgba(10,22,40,0.08) 100%);
+    background: linear-gradient(to top, rgba(10,22,40,0.96) 0%, rgba(10,22,40,0.65) 50%, rgba(10,22,40,0.4) 100%);
     z-index: 1; pointer-events: none;
   }
 
@@ -206,6 +206,7 @@
     font-size: 15px; font-weight: 300; font-style: italic;
     color: rgba(255,255,255,0.75); line-height: 1.8;
     margin-bottom: 32px;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.5);
   }
 
   .stat-row {
@@ -356,7 +357,7 @@
   .pillar:hover { border-color: var(--teal); transform: translateY(-4px); }
   .pillar-icon { font-size: 26px; margin-bottom: 16px; display: block; }
   .pillar h4 { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 600; color: var(--ink); margin-bottom: 8px; }
-  .pillar p { font-size: 14px; color: var(--grey); line-height: 1.7; font-weight: 300; }
+  .pillar p { font-size: 16px; color: var(--grey); line-height: 1.7; font-weight: 300; }
 
   /* ── PROGRAMMES ── */
   #programmes { background: var(--mist); }
@@ -404,7 +405,7 @@
     margin-bottom: 10px;
   }
 
-  .programme-card p { font-size: 15px; color: var(--grey); line-height: 1.7; font-weight: 300; }
+  .programme-card p { font-size: 16px; color: var(--grey); line-height: 1.7; font-weight: 300; }
 
   /* ── REACH ── */
   #reach { background: var(--ink); }
@@ -413,11 +414,11 @@
   .reach-card:hover { border-color: var(--gold); }
   .reach-card-label { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); font-weight: 500; margin-bottom: 10px; }
   .reach-card h4 { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 600; color: var(--white); margin-bottom: 8px; }
-  .reach-card p { font-size: 14px; color: rgba(255,255,255,0.45); line-height: 1.7; font-weight: 300; }
+  .reach-card p { font-size: 16px; color: rgba(255,255,255,0.45); line-height: 1.7; font-weight: 300; }
   .achievements { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
   .achievement-item { background: rgba(26,79,168,0.1); border-left: 3px solid var(--gold); padding: 20px 24px; }
   .ach-source { font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); font-weight: 500; margin-bottom: 6px; }
-  .achievement-item p { font-size: 14px; color: rgba(255,255,255,0.65); line-height: 1.65; font-weight: 300; }
+  .achievement-item p { font-size: 16px; color: rgba(255,255,255,0.65); line-height: 1.65; font-weight: 300; }
 
   /* ── LEADERSHIP ── */
   #leadership { background: var(--white); }
@@ -429,11 +430,11 @@
   .chairman-photo { width: 160px; height: 160px; border-radius: 50%; object-fit: cover; object-position: center top; margin-bottom: 18px; border: 3px solid rgba(200,149,42,0.6); display: block; }
   .chairman-name { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 600; color: var(--white); margin-bottom: 4px; }
   .chairman-creds { font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); font-weight: 400; margin-bottom: 20px; }
-  .chairman-bio { font-size: 15px; color: rgba(255,255,255,0.6); line-height: 1.8; font-weight: 300; margin-bottom: 28px; }
+  .chairman-bio { font-size: 16px; color: rgba(255,255,255,0.6); line-height: 1.8; font-weight: 300; margin-bottom: 28px; }
   .chairman-highlights { display: flex; flex-direction: column; gap: 10px; }
   .ch-highlight { display: flex; gap: 12px; align-items: baseline; }
   .ch-highlight::before { content: '◆'; font-size: 6px; color: var(--gold); flex-shrink: 0; }
-  .ch-highlight span { font-size: 14px; color: rgba(255,255,255,0.55); font-weight: 300; line-height: 1.55; }
+  .ch-highlight span { font-size: 16px; color: rgba(255,255,255,0.55); font-weight: 300; line-height: 1.55; }
 
   .board-section h3 { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 400; color: var(--ink); margin-bottom: 24px; }
   .board-cards { display: flex; flex-direction: column; gap: 16px; }
@@ -441,7 +442,7 @@
   .board-card:hover { border-left-color: var(--teal); }
   .board-card-title { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--teal); font-weight: 500; margin-bottom: 4px; }
   .board-card-name { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 600; color: var(--ink); margin-bottom: 8px; }
-  .board-card-desc { font-size: 14px; color: var(--grey); line-height: 1.65; font-weight: 300; }
+  .board-card-desc { font-size: 16px; color: var(--grey); line-height: 1.65; font-weight: 300; }
 
   /* ── OPERATION GRACE ── */
   #operation-grace {
@@ -615,7 +616,7 @@
   .contact-item-inline:last-child { border-right: none; }
   .ci-icon { font-size: 18px; flex-shrink: 0; margin-top: 2px; }
   .ci-label { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); font-weight: 500; margin-bottom: 4px; }
-  .ci-val { font-size: 14px; color: rgba(255,255,255,0.6); font-weight: 300; }
+  .ci-val { font-size: 16px; color: rgba(255,255,255,0.6); font-weight: 300; }
 
   /* ── FOOTER ── */
   footer {
