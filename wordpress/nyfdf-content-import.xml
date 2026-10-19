@@ -1,0 +1,1028 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- This is a WordPress eXtended RSS file generated for the NYFDF static-site-to-WordPress migration. -->
+<rss version="2.0"
+  xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:wp="http://wordpress.org/export/1.2/"
+>
+<channel>
+  <title>NYFDF</title>
+  <link>https://nyfdf.org</link>
+  <description>Northgate Youth and Family Development Foundation</description>
+  <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+  <language>en-US</language>
+  <wp:wxr_version>1.2</wp:wxr_version>
+  <wp:base_site_url>https://nyfdf.org</wp:base_site_url>
+  <wp:base_blog_url>https://nyfdf.org</wp:base_blog_url>
+  <wp:author>
+    <wp:author_id>1</wp:author_id>
+    <wp:author_login><![CDATA[admin]]></wp:author_login>
+    <wp:author_email><![CDATA[northgatefoundation2008@gmail.com]]></wp:author_email>
+    <wp:author_display_name><![CDATA[NYFDF]]></wp:author_display_name>
+    <wp:author_first_name><![CDATA[]]></wp:author_first_name>
+    <wp:author_last_name><![CDATA[]]></wp:author_last_name>
+  </wp:author>
+
+  <wp:term>
+    <wp:term_id>1007</wp:term_id>
+    <wp:term_taxonomy><![CDATA[nyfdf_reach_category]]></wp:term_taxonomy>
+    <wp:term_slug><![CDATA[education]]></wp:term_slug>
+    <wp:term_parent><![CDATA[]]></wp:term_parent>
+    <wp:term_name><![CDATA[Education]]></wp:term_name>
+  </wp:term>
+  <wp:term>
+    <wp:term_id>1008</wp:term_id>
+    <wp:term_taxonomy><![CDATA[nyfdf_reach_category]]></wp:term_taxonomy>
+    <wp:term_slug><![CDATA[community]]></wp:term_slug>
+    <wp:term_parent><![CDATA[]]></wp:term_parent>
+    <wp:term_name><![CDATA[Community]]></wp:term_name>
+  </wp:term>
+  <wp:term>
+    <wp:term_id>1009</wp:term_id>
+    <wp:term_taxonomy><![CDATA[nyfdf_reach_category]]></wp:term_taxonomy>
+    <wp:term_slug><![CDATA[institutions]]></wp:term_slug>
+    <wp:term_parent><![CDATA[]]></wp:term_parent>
+    <wp:term_name><![CDATA[Institutions]]></wp:term_name>
+  </wp:term>
+  <wp:term>
+    <wp:term_id>1010</wp:term_id>
+    <wp:term_taxonomy><![CDATA[nyfdf_reach_category]]></wp:term_taxonomy>
+    <wp:term_slug><![CDATA[regional]]></wp:term_slug>
+    <wp:term_parent><![CDATA[]]></wp:term_parent>
+    <wp:term_name><![CDATA[Regional]]></wp:term_name>
+  </wp:term>
+  <wp:term>
+    <wp:term_id>1011</wp:term_id>
+    <wp:term_taxonomy><![CDATA[nyfdf_reach_category]]></wp:term_taxonomy>
+    <wp:term_slug><![CDATA[corrections]]></wp:term_slug>
+    <wp:term_parent><![CDATA[]]></wp:term_parent>
+    <wp:term_name><![CDATA[Corrections]]></wp:term_name>
+  </wp:term>
+  <wp:term>
+    <wp:term_id>1012</wp:term_id>
+    <wp:term_taxonomy><![CDATA[nyfdf_reach_category]]></wp:term_taxonomy>
+    <wp:term_slug><![CDATA[education-secondary]]></wp:term_slug>
+    <wp:term_parent><![CDATA[]]></wp:term_parent>
+    <wp:term_name><![CDATA[Education — Secondary]]></wp:term_name>
+  </wp:term>
+
+  <wp:term>
+    <wp:term_id>1026</wp:term_id>
+    <wp:term_taxonomy><![CDATA[nav_menu]]></wp:term_taxonomy>
+    <wp:term_slug><![CDATA[primary-menu]]></wp:term_slug>
+    <wp:term_parent><![CDATA[]]></wp:term_parent>
+    <wp:term_name><![CDATA[Primary Menu]]></wp:term_name>
+  </wp:term>
+  <wp:term>
+    <wp:term_id>1033</wp:term_id>
+    <wp:term_taxonomy><![CDATA[nav_menu]]></wp:term_taxonomy>
+    <wp:term_slug><![CDATA[footer-menu]]></wp:term_slug>
+    <wp:term_parent><![CDATA[]]></wp:term_parent>
+    <wp:term_name><![CDATA[Footer Menu]]></wp:term_name>
+  </wp:term>
+
+    <item>
+      <title>NYFDF Logo</title>
+      <link>https://nyfdf.org/images/nyfdf-logo.jpg</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <dc:creator><![CDATA[admin]]></dc:creator>
+      <guid isPermaLink="false">https://nyfdf.org/images/nyfdf-logo.jpg</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+      <wp:post_id>1001</wp:post_id>
+      <wp:post_date><![CDATA[2026-01-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-01-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[nyfdf-logo]]></wp:post_name>
+      <wp:status><![CDATA[inherit]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type><![CDATA[attachment]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <wp:attachment_url>https://nyfdf.org/images/nyfdf-logo.jpg</wp:attachment_url>
+      <wp:postmeta>
+        <wp:meta_key><![CDATA[_wp_attachment_image_alt]]></wp:meta_key>
+        <wp:meta_value><![CDATA[NYFDF Logo]]></wp:meta_value>
+      </wp:postmeta>
+    </item>
+    <item>
+      <title>Wesley Curwin Boynes, JP</title>
+      <link>https://nyfdf.org/images/wesley-boynes.jpg</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <dc:creator><![CDATA[admin]]></dc:creator>
+      <guid isPermaLink="false">https://nyfdf.org/images/wesley-boynes.jpg</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+      <wp:post_id>1002</wp:post_id>
+      <wp:post_date><![CDATA[2026-01-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-01-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[wesley-boynes]]></wp:post_name>
+      <wp:status><![CDATA[inherit]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type><![CDATA[attachment]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <wp:attachment_url>https://nyfdf.org/images/wesley-boynes.jpg</wp:attachment_url>
+      <wp:postmeta>
+        <wp:meta_key><![CDATA[_wp_attachment_image_alt]]></wp:meta_key>
+        <wp:meta_value><![CDATA[Wesley Curwin Boynes, JP]]></wp:meta_value>
+      </wp:postmeta>
+    </item>
+    <item>
+      <title>EMPOWER Development logo</title>
+      <link>https://nyfdf.org/images/empower-logo.png</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <dc:creator><![CDATA[admin]]></dc:creator>
+      <guid isPermaLink="false">https://nyfdf.org/images/empower-logo.png</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+      <wp:post_id>1003</wp:post_id>
+      <wp:post_date><![CDATA[2026-01-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-01-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[empower-logo]]></wp:post_name>
+      <wp:status><![CDATA[inherit]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type><![CDATA[attachment]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <wp:attachment_url>https://nyfdf.org/images/empower-logo.png</wp:attachment_url>
+      <wp:postmeta>
+        <wp:meta_key><![CDATA[_wp_attachment_image_alt]]></wp:meta_key>
+        <wp:meta_value><![CDATA[EMPOWER Development logo]]></wp:meta_value>
+      </wp:postmeta>
+    </item>
+    <item>
+      <title>CVSS Jamaica logo</title>
+      <link>https://nyfdf.org/images/cvss-logo.png</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <dc:creator><![CDATA[admin]]></dc:creator>
+      <guid isPermaLink="false">https://nyfdf.org/images/cvss-logo.png</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+      <wp:post_id>1004</wp:post_id>
+      <wp:post_date><![CDATA[2026-01-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-01-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[cvss-logo]]></wp:post_name>
+      <wp:status><![CDATA[inherit]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type><![CDATA[attachment]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <wp:attachment_url>https://nyfdf.org/images/cvss-logo.png</wp:attachment_url>
+      <wp:postmeta>
+        <wp:meta_key><![CDATA[_wp_attachment_image_alt]]></wp:meta_key>
+        <wp:meta_value><![CDATA[CVSS Jamaica logo]]></wp:meta_value>
+      </wp:postmeta>
+    </item>
+    <item>
+      <title>Jamaica Independent Schools' Association logo</title>
+      <link>https://nyfdf.org/images/jisa-logo.jpg</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <dc:creator><![CDATA[admin]]></dc:creator>
+      <guid isPermaLink="false">https://nyfdf.org/images/jisa-logo.jpg</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+      <wp:post_id>1005</wp:post_id>
+      <wp:post_date><![CDATA[2026-01-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-01-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[jisa-logo]]></wp:post_name>
+      <wp:status><![CDATA[inherit]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type><![CDATA[attachment]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <wp:attachment_url>https://nyfdf.org/images/jisa-logo.jpg</wp:attachment_url>
+      <wp:postmeta>
+        <wp:meta_key><![CDATA[_wp_attachment_image_alt]]></wp:meta_key>
+        <wp:meta_value><![CDATA[Jamaica Independent Schools' Association logo]]></wp:meta_value>
+      </wp:postmeta>
+    </item>
+    <item>
+      <title>NCTVET logo</title>
+      <link>https://nyfdf.org/images/nctvet-logo.jpg</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <dc:creator><![CDATA[admin]]></dc:creator>
+      <guid isPermaLink="false">https://nyfdf.org/images/nctvet-logo.jpg</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+      <wp:post_id>1006</wp:post_id>
+      <wp:post_date><![CDATA[2026-01-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-01-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[nctvet-logo]]></wp:post_name>
+      <wp:status><![CDATA[inherit]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type><![CDATA[attachment]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <wp:attachment_url>https://nyfdf.org/images/nctvet-logo.jpg</wp:attachment_url>
+      <wp:postmeta>
+        <wp:meta_key><![CDATA[_wp_attachment_image_alt]]></wp:meta_key>
+        <wp:meta_value><![CDATA[NCTVET logo]]></wp:meta_value>
+      </wp:postmeta>
+    </item>
+    <item>
+      <title>Character &amp; Leadership Development</title>
+      <link>https://nyfdf.org/programmes/character-and-leadership-development/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <dc:creator><![CDATA[admin]]></dc:creator>
+      <guid isPermaLink="false">https://nyfdf.org/?post_type=nyfdf_programme&#38;p=1013</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+      <wp:post_id>1013</wp:post_id>
+      <wp:post_date><![CDATA[2026-01-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-01-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[character-and-leadership-development]]></wp:post_name>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type><![CDATA[nyfdf_programme]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <wp:postmeta>
+        <wp:meta_key><![CDATA[programme_order]]></wp:meta_key>
+        <wp:meta_value><![CDATA[1]]></wp:meta_value>
+      </wp:postmeta>
+      <wp:postmeta>
+        <wp:meta_key><![CDATA[programme_short_description]]></wp:meta_key>
+        <wp:meta_value><![CDATA[School-based seminars and community programmes equipping young people with leadership skills, moral values, and a sense of civic responsibility.]]></wp:meta_value>
+      </wp:postmeta>
+    </item>
+    <item>
+      <title>Parenting Empowerment</title>
+      <link>https://nyfdf.org/programmes/parenting-empowerment/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <dc:creator><![CDATA[admin]]></dc:creator>
+      <guid isPermaLink="false">https://nyfdf.org/?post_type=nyfdf_programme&#38;p=1014</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+      <wp:post_id>1014</wp:post_id>
+      <wp:post_date><![CDATA[2026-01-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-01-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[parenting-empowerment]]></wp:post_name>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type><![CDATA[nyfdf_programme]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <wp:postmeta>
+        <wp:meta_key><![CDATA[programme_order]]></wp:meta_key>
+        <wp:meta_value><![CDATA[2]]></wp:meta_value>
+      </wp:postmeta>
+      <wp:postmeta>
+        <wp:meta_key><![CDATA[programme_short_description]]></wp:meta_key>
+        <wp:meta_value><![CDATA[Workshops and mentoring programmes — including the Northgate Parent Empowerment Place (N-PEP) — equipping parents and caregivers with tools to raise purpose-driven children.]]></wp:meta_value>
+      </wp:postmeta>
+    </item>
+    <item>
+      <title>Health &amp; Medical Outreach</title>
+      <link>https://nyfdf.org/programmes/health-and-medical-outreach/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <dc:creator><![CDATA[admin]]></dc:creator>
+      <guid isPermaLink="false">https://nyfdf.org/?post_type=nyfdf_programme&#38;p=1015</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+      <wp:post_id>1015</wp:post_id>
+      <wp:post_date><![CDATA[2026-01-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-01-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[health-and-medical-outreach]]></wp:post_name>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type><![CDATA[nyfdf_programme]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <wp:postmeta>
+        <wp:meta_key><![CDATA[programme_order]]></wp:meta_key>
+        <wp:meta_value><![CDATA[3]]></wp:meta_value>
+      </wp:postmeta>
+      <wp:postmeta>
+        <wp:meta_key><![CDATA[programme_short_description]]></wp:meta_key>
+        <wp:meta_value><![CDATA[Community medical clinics and health fairs delivering free screening, dental services, nutritional counselling, and health education — including the annual Northgate Clinic and Operation Grace.]]></wp:meta_value>
+      </wp:postmeta>
+    </item>
+    <item>
+      <title>Project Esther</title>
+      <link>https://nyfdf.org/programmes/project-esther/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <dc:creator><![CDATA[admin]]></dc:creator>
+      <guid isPermaLink="false">https://nyfdf.org/?post_type=nyfdf_programme&#38;p=1016</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+      <wp:post_id>1016</wp:post_id>
+      <wp:post_date><![CDATA[2026-01-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-01-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[project-esther]]></wp:post_name>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type><![CDATA[nyfdf_programme]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <wp:postmeta>
+        <wp:meta_key><![CDATA[programme_order]]></wp:meta_key>
+        <wp:meta_value><![CDATA[4]]></wp:meta_value>
+      </wp:postmeta>
+      <wp:postmeta>
+        <wp:meta_key><![CDATA[programme_short_description]]></wp:meta_key>
+        <wp:meta_value><![CDATA[A ten-week character development programme providing mentoring, counselling, and activation for young women — including those transitioning out of state residential facilities at age eighteen.]]></wp:meta_value>
+      </wp:postmeta>
+    </item>
+    <item>
+      <title>Technology Access — C-TEC</title>
+      <link>https://nyfdf.org/programmes/technology-access---c-tec/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <dc:creator><![CDATA[admin]]></dc:creator>
+      <guid isPermaLink="false">https://nyfdf.org/?post_type=nyfdf_programme&#38;p=1017</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+      <wp:post_id>1017</wp:post_id>
+      <wp:post_date><![CDATA[2026-01-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-01-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[technology-access---c-tec]]></wp:post_name>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type><![CDATA[nyfdf_programme]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <wp:postmeta>
+        <wp:meta_key><![CDATA[programme_order]]></wp:meta_key>
+        <wp:meta_value><![CDATA[5]]></wp:meta_value>
+      </wp:postmeta>
+      <wp:postmeta>
+        <wp:meta_key><![CDATA[programme_short_description]]></wp:meta_key>
+        <wp:meta_value><![CDATA[An NCTVET-accredited Community Technological Empowerment Centre offering certified Data Operations training, digital literacy, and technology access for individuals, youth, and organisations.]]></wp:meta_value>
+      </wp:postmeta>
+    </item>
+    <item>
+      <title>Financial Literacy — Youth $$ Programme</title>
+      <link>https://nyfdf.org/programmes/financial-literacy---youth-ss-programme/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <dc:creator><![CDATA[admin]]></dc:creator>
+      <guid isPermaLink="false">https://nyfdf.org/?post_type=nyfdf_programme&#38;p=1018</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+      <wp:post_id>1018</wp:post_id>
+      <wp:post_date><![CDATA[2026-01-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-01-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[financial-literacy---youth-ss-programme]]></wp:post_name>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type><![CDATA[nyfdf_programme]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <wp:postmeta>
+        <wp:meta_key><![CDATA[programme_order]]></wp:meta_key>
+        <wp:meta_value><![CDATA[6]]></wp:meta_value>
+      </wp:postmeta>
+      <wp:postmeta>
+        <wp:meta_key><![CDATA[programme_short_description]]></wp:meta_key>
+        <wp:meta_value><![CDATA[Delivered in collaboration with The Consulting Interface (Trinidad & Tobago), this programme exposes young people to money management, enterprise, and economic citizenship.]]></wp:meta_value>
+      </wp:postmeta>
+    </item>
+    <item>
+      <title>Operation Grace</title>
+      <link>https://nyfdf.org/programmes/operation-grace/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <dc:creator><![CDATA[admin]]></dc:creator>
+      <guid isPermaLink="false">https://nyfdf.org/?post_type=nyfdf_programme&#38;p=1019</guid>
+      <description></description>
+      <content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Launched in response to Hurricane Melissa, Operation Grace is NYFDF's 2026 community recovery programme — a six-month series of monthly outreach events serving communities in Cambridge St. James.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Each edition is themed around a specific need — from general health screening to male empowerment, women's wellness, and youth development. Every event integrates clinical care, counselling, recreation, digital access, and care packages.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Operation Grace reflects what NYFDF has always done: show up consistently, serve holistically, and treat every person with dignity.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+      <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+      <wp:post_id>1019</wp:post_id>
+      <wp:post_date><![CDATA[2026-01-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-01-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[operation-grace]]></wp:post_name>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type><![CDATA[nyfdf_programme]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <wp:postmeta>
+        <wp:meta_key><![CDATA[programme_order]]></wp:meta_key>
+        <wp:meta_value><![CDATA[7]]></wp:meta_value>
+      </wp:postmeta>
+      <wp:postmeta>
+        <wp:meta_key><![CDATA[programme_short_description]]></wp:meta_key>
+        <wp:meta_value><![CDATA[Launched in response to Hurricane Melissa, Operation Grace is NYFDF's 2026 community recovery programme — a six-month series of monthly outreach events serving communities in Cambridge, St. James.]]></wp:meta_value>
+      </wp:postmeta>
+      <wp:postmeta>
+        <wp:meta_key><![CDATA[programme_is_flagship]]></wp:meta_key>
+        <wp:meta_value><![CDATA[on]]></wp:meta_value>
+      </wp:postmeta>
+      <wp:postmeta>
+        <wp:meta_key><![CDATA[programme_timeline]]></wp:meta_key>
+        <wp:meta_value><![CDATA[a:5:{i:0;a:5:{s:12:"month_number";s:1:"1";s:8:"date_tag";s:23:"March 2026 — Complete";s:10:"event_name";s:16:"Community Launch";s:17:"event_description";s:62:"General health outreach and introduction. Cambridge St. James.";s:11:"is_complete";s:2:"on";}i:1;a:5:{s:12:"month_number";s:1:"2";s:8:"date_tag";s:23:"April 2026 — Complete";s:10:"event_name";s:22:"Male Empowerment Event";s:17:"event_description";s:79:""Big Man Ting Dis" — Men's health, family wellness, and community recreation.";s:11:"is_complete";s:2:"on";}i:2;a:5:{s:12:"month_number";s:1:"3";s:8:"date_tag";s:8:"May 2026";s:10:"event_name";s:38:"Mental Health, Children & Family Event";s:17:"event_description";s:59:"Dedicated programming for women, mothers, and family units.";s:11:"is_complete";s:0:"";}i:3;a:5:{s:12:"month_number";s:1:"4";s:8:"date_tag";s:16:"June & July 2026";s:10:"event_name";s:38:"Farmers & Micro-Industries Empowerment";s:17:"event_description";s:53:"Mentorship, skills, and opportunity for young people.";s:11:"is_complete";s:0:"";}i:4;a:5:{s:12:"month_number";s:1:"6";s:8:"date_tag";s:11:"August 2026";s:10:"event_name";s:32:"Community Celebration & Closeout";s:17:"event_description";s:37:"Back to School Support for Cambridge.";s:11:"is_complete";s:0:"";}}]]></wp:meta_value>
+      </wp:postmeta>
+    </item>
+    <item>
+      <title>30+ Schools Engaged</title>
+      <link>https://nyfdf.org/?post_type=nyfdf_reach&#38;p=1020</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <dc:creator><![CDATA[admin]]></dc:creator>
+      <guid isPermaLink="false">https://nyfdf.org/?post_type=nyfdf_reach&#38;p=1020</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+      <wp:post_id>1020</wp:post_id>
+      <wp:post_date><![CDATA[2026-01-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-01-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[30-schools-engaged]]></wp:post_name>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type><![CDATA[nyfdf_reach]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <category domain="nyfdf_reach_category" nicename="education"><![CDATA[Education]]></category>
+      <wp:postmeta>
+        <wp:meta_key><![CDATA[reach_label]]></wp:meta_key>
+        <wp:meta_value><![CDATA[Education]]></wp:meta_value>
+      </wp:postmeta>
+      <wp:postmeta>
+        <wp:meta_key><![CDATA[reach_description]]></wp:meta_key>
+        <wp:meta_value><![CDATA[From infant schools to high schools and skills training centres across St. Ann, St. Mary, St. James, Trelawny, Kingston, and beyond.]]></wp:meta_value>
+      </wp:postmeta>
+      <wp:postmeta>
+        <wp:meta_key><![CDATA[reach_order]]></wp:meta_key>
+        <wp:meta_value><![CDATA[1]]></wp:meta_value>
+      </wp:postmeta>
+    </item>
+    <item>
+      <title>Multi-Parish Outreach</title>
+      <link>https://nyfdf.org/?post_type=nyfdf_reach&#38;p=1021</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <dc:creator><![CDATA[admin]]></dc:creator>
+      <guid isPermaLink="false">https://nyfdf.org/?post_type=nyfdf_reach&#38;p=1021</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+      <wp:post_id>1021</wp:post_id>
+      <wp:post_date><![CDATA[2026-01-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-01-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[multiparish-outreach]]></wp:post_name>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type><![CDATA[nyfdf_reach]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <category domain="nyfdf_reach_category" nicename="community"><![CDATA[Community]]></category>
+      <wp:postmeta>
+        <wp:meta_key><![CDATA[reach_label]]></wp:meta_key>
+        <wp:meta_value><![CDATA[Community]]></wp:meta_value>
+      </wp:postmeta>
+      <wp:postmeta>
+        <wp:meta_key><![CDATA[reach_description]]></wp:meta_key>
+        <wp:meta_value><![CDATA[Health clinics, grief counselling, feeding programmes, character development, and community initiatives delivered across Jamaica since 2008.]]></wp:meta_value>
+      </wp:postmeta>
+      <wp:postmeta>
+        <wp:meta_key><![CDATA[reach_order]]></wp:meta_key>
+        <wp:meta_value><![CDATA[2]]></wp:meta_value>
+      </wp:postmeta>
+    </item>
+    <item>
+      <title>Government &amp; Corporate Partners</title>
+      <link>https://nyfdf.org/?post_type=nyfdf_reach&#38;p=1022</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <dc:creator><![CDATA[admin]]></dc:creator>
+      <guid isPermaLink="false">https://nyfdf.org/?post_type=nyfdf_reach&#38;p=1022</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+      <wp:post_id>1022</wp:post_id>
+      <wp:post_date><![CDATA[2026-01-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-01-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[government-corporate-partners]]></wp:post_name>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type><![CDATA[nyfdf_reach]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <category domain="nyfdf_reach_category" nicename="institutions"><![CDATA[Institutions]]></category>
+      <wp:postmeta>
+        <wp:meta_key><![CDATA[reach_label]]></wp:meta_key>
+        <wp:meta_value><![CDATA[Institutions]]></wp:meta_value>
+      </wp:postmeta>
+      <wp:postmeta>
+        <wp:meta_key><![CDATA[reach_description]]></wp:meta_key>
+        <wp:meta_value><![CDATA[Active relationships with the Ministry of Health, Ministry of Education, NCB, Digicel, Guardian Life, HEART Trust, and the Child Development Agency.]]></wp:meta_value>
+      </wp:postmeta>
+      <wp:postmeta>
+        <wp:meta_key><![CDATA[reach_order]]></wp:meta_key>
+        <wp:meta_value><![CDATA[3]]></wp:meta_value>
+      </wp:postmeta>
+    </item>
+    <item>
+      <title>Caribbean Engagement</title>
+      <link>https://nyfdf.org/?post_type=nyfdf_reach&#38;p=1023</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <dc:creator><![CDATA[admin]]></dc:creator>
+      <guid isPermaLink="false">https://nyfdf.org/?post_type=nyfdf_reach&#38;p=1023</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+      <wp:post_id>1023</wp:post_id>
+      <wp:post_date><![CDATA[2026-01-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-01-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[caribbean-engagement]]></wp:post_name>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type><![CDATA[nyfdf_reach]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <category domain="nyfdf_reach_category" nicename="regional"><![CDATA[Regional]]></category>
+      <wp:postmeta>
+        <wp:meta_key><![CDATA[reach_label]]></wp:meta_key>
+        <wp:meta_value><![CDATA[Regional]]></wp:meta_value>
+      </wp:postmeta>
+      <wp:postmeta>
+        <wp:meta_key><![CDATA[reach_description]]></wp:meta_key>
+        <wp:meta_value><![CDATA[Sent delegations to the Eastern Caribbean and Jamaica Youth Encounter (ECJYE) in Antigua; hosted approximately 256 young people from across the Caribbean in Jamaica in 2017.]]></wp:meta_value>
+      </wp:postmeta>
+      <wp:postmeta>
+        <wp:meta_key><![CDATA[reach_order]]></wp:meta_key>
+        <wp:meta_value><![CDATA[4]]></wp:meta_value>
+      </wp:postmeta>
+    </item>
+    <item>
+      <title>Tower Street Facility</title>
+      <link>https://nyfdf.org/?post_type=nyfdf_reach&#38;p=1024</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <dc:creator><![CDATA[admin]]></dc:creator>
+      <guid isPermaLink="false">https://nyfdf.org/?post_type=nyfdf_reach&#38;p=1024</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+      <wp:post_id>1024</wp:post_id>
+      <wp:post_date><![CDATA[2026-01-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-01-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[tower-street-facility]]></wp:post_name>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type><![CDATA[nyfdf_reach]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <category domain="nyfdf_reach_category" nicename="corrections"><![CDATA[Corrections]]></category>
+      <wp:postmeta>
+        <wp:meta_key><![CDATA[reach_label]]></wp:meta_key>
+        <wp:meta_value><![CDATA[Corrections]]></wp:meta_value>
+      </wp:postmeta>
+      <wp:postmeta>
+        <wp:meta_key><![CDATA[reach_description]]></wp:meta_key>
+        <wp:meta_value><![CDATA[Male Character Development sessions and educational materials provided to young men at the Tower Street Adult Correctional Facility, 2016.]]></wp:meta_value>
+      </wp:postmeta>
+      <wp:postmeta>
+        <wp:meta_key><![CDATA[reach_order]]></wp:meta_key>
+        <wp:meta_value><![CDATA[5]]></wp:meta_value>
+      </wp:postmeta>
+    </item>
+    <item>
+      <title>NorthGate High School</title>
+      <link>https://nyfdf.org/?post_type=nyfdf_reach&#38;p=1025</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <dc:creator><![CDATA[admin]]></dc:creator>
+      <guid isPermaLink="false">https://nyfdf.org/?post_type=nyfdf_reach&#38;p=1025</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+      <wp:post_id>1025</wp:post_id>
+      <wp:post_date><![CDATA[2026-01-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-01-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[northgate-high-school]]></wp:post_name>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type><![CDATA[nyfdf_reach]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <category domain="nyfdf_reach_category" nicename="education-secondary"><![CDATA[Education — Secondary]]></category>
+      <wp:postmeta>
+        <wp:meta_key><![CDATA[reach_label]]></wp:meta_key>
+        <wp:meta_value><![CDATA[Education — Secondary]]></wp:meta_value>
+      </wp:postmeta>
+      <wp:postmeta>
+        <wp:meta_key><![CDATA[reach_description]]></wp:meta_key>
+        <wp:meta_value><![CDATA[Founded in Ocho Rios in September 2012, NGH delivers values-based secondary education focused on developing leaders of pristine character and academic excellence.]]></wp:meta_value>
+      </wp:postmeta>
+      <wp:postmeta>
+        <wp:meta_key><![CDATA[reach_order]]></wp:meta_key>
+        <wp:meta_value><![CDATA[6]]></wp:meta_value>
+      </wp:postmeta>
+    </item>
+    <item>
+      <title>About</title>
+      <link>https://nyfdf.org/#about</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <dc:creator><![CDATA[admin]]></dc:creator>
+      <guid isPermaLink="false">https://nyfdf.org/?p=1027</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+      <wp:post_id>1027</wp:post_id>
+      <wp:post_date><![CDATA[2026-01-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-01-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[about]]></wp:post_name>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>1</wp:menu_order>
+      <wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <category domain="nav_menu" nicename="primary-menu"><![CDATA[Primary Menu]]></category>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[custom]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[custom]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[1027]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[https://nyfdf.org/#about]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+    </item>
+    <item>
+      <title>Programmes</title>
+      <link>https://nyfdf.org/#programmes</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <dc:creator><![CDATA[admin]]></dc:creator>
+      <guid isPermaLink="false">https://nyfdf.org/?p=1028</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+      <wp:post_id>1028</wp:post_id>
+      <wp:post_date><![CDATA[2026-01-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-01-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[programmes]]></wp:post_name>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>2</wp:menu_order>
+      <wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <category domain="nav_menu" nicename="primary-menu"><![CDATA[Primary Menu]]></category>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[custom]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[custom]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[1028]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[https://nyfdf.org/#programmes]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+    </item>
+    <item>
+      <title>Our Reach</title>
+      <link>https://nyfdf.org/#reach</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <dc:creator><![CDATA[admin]]></dc:creator>
+      <guid isPermaLink="false">https://nyfdf.org/?p=1029</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+      <wp:post_id>1029</wp:post_id>
+      <wp:post_date><![CDATA[2026-01-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-01-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[our-reach]]></wp:post_name>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>3</wp:menu_order>
+      <wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <category domain="nav_menu" nicename="primary-menu"><![CDATA[Primary Menu]]></category>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[custom]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[custom]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[1029]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[https://nyfdf.org/#reach]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+    </item>
+    <item>
+      <title>Leadership</title>
+      <link>https://nyfdf.org/#leadership</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <dc:creator><![CDATA[admin]]></dc:creator>
+      <guid isPermaLink="false">https://nyfdf.org/?p=1030</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+      <wp:post_id>1030</wp:post_id>
+      <wp:post_date><![CDATA[2026-01-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-01-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[leadership]]></wp:post_name>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>4</wp:menu_order>
+      <wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <category domain="nav_menu" nicename="primary-menu"><![CDATA[Primary Menu]]></category>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[custom]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[custom]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[1030]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[https://nyfdf.org/#leadership]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+    </item>
+    <item>
+      <title>Operation Grace</title>
+      <link>https://nyfdf.org/#flagship</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <dc:creator><![CDATA[admin]]></dc:creator>
+      <guid isPermaLink="false">https://nyfdf.org/?p=1031</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+      <wp:post_id>1031</wp:post_id>
+      <wp:post_date><![CDATA[2026-01-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-01-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[operation-grace]]></wp:post_name>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>5</wp:menu_order>
+      <wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <category domain="nav_menu" nicename="primary-menu"><![CDATA[Primary Menu]]></category>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[custom]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[custom]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[1031]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[https://nyfdf.org/#flagship]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+    </item>
+    <item>
+      <title>Connect</title>
+      <link>https://nyfdf.org/#connect</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <dc:creator><![CDATA[admin]]></dc:creator>
+      <guid isPermaLink="false">https://nyfdf.org/?p=1032</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+      <wp:post_id>1032</wp:post_id>
+      <wp:post_date><![CDATA[2026-01-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-01-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[connect]]></wp:post_name>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>6</wp:menu_order>
+      <wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <category domain="nav_menu" nicename="primary-menu"><![CDATA[Primary Menu]]></category>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[custom]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[custom]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[1032]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[https://nyfdf.org/#connect]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+    </item>
+    <item>
+      <title>About</title>
+      <link>https://nyfdf.org/#about</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <dc:creator><![CDATA[admin]]></dc:creator>
+      <guid isPermaLink="false">https://nyfdf.org/?p=1034</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+      <wp:post_id>1034</wp:post_id>
+      <wp:post_date><![CDATA[2026-01-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-01-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[about]]></wp:post_name>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>1</wp:menu_order>
+      <wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <category domain="nav_menu" nicename="footer-menu"><![CDATA[Footer Menu]]></category>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[custom]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[custom]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[1034]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[https://nyfdf.org/#about]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+    </item>
+    <item>
+      <title>Programmes</title>
+      <link>https://nyfdf.org/#programmes</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <dc:creator><![CDATA[admin]]></dc:creator>
+      <guid isPermaLink="false">https://nyfdf.org/?p=1035</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+      <wp:post_id>1035</wp:post_id>
+      <wp:post_date><![CDATA[2026-01-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-01-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[programmes]]></wp:post_name>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>2</wp:menu_order>
+      <wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <category domain="nav_menu" nicename="footer-menu"><![CDATA[Footer Menu]]></category>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[custom]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[custom]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[1035]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[https://nyfdf.org/#programmes]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+    </item>
+    <item>
+      <title>Reach</title>
+      <link>https://nyfdf.org/#reach</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <dc:creator><![CDATA[admin]]></dc:creator>
+      <guid isPermaLink="false">https://nyfdf.org/?p=1036</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+      <wp:post_id>1036</wp:post_id>
+      <wp:post_date><![CDATA[2026-01-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-01-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[reach]]></wp:post_name>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>3</wp:menu_order>
+      <wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <category domain="nav_menu" nicename="footer-menu"><![CDATA[Footer Menu]]></category>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[custom]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[custom]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[1036]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[https://nyfdf.org/#reach]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+    </item>
+    <item>
+      <title>Leadership</title>
+      <link>https://nyfdf.org/#leadership</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <dc:creator><![CDATA[admin]]></dc:creator>
+      <guid isPermaLink="false">https://nyfdf.org/?p=1037</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+      <wp:post_id>1037</wp:post_id>
+      <wp:post_date><![CDATA[2026-01-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-01-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[leadership]]></wp:post_name>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>4</wp:menu_order>
+      <wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <category domain="nav_menu" nicename="footer-menu"><![CDATA[Footer Menu]]></category>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[custom]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[custom]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[1037]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[https://nyfdf.org/#leadership]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>https://nyfdf.org/#connect</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <dc:creator><![CDATA[admin]]></dc:creator>
+      <guid isPermaLink="false">https://nyfdf.org/?p=1038</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+      <wp:post_id>1038</wp:post_id>
+      <wp:post_date><![CDATA[2026-01-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-01-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[contact]]></wp:post_name>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>5</wp:menu_order>
+      <wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <category domain="nav_menu" nicename="footer-menu"><![CDATA[Footer Menu]]></category>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[custom]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[custom]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[1038]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[https://nyfdf.org/#connect]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+    </item>
+</channel>
+</rss>
